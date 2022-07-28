@@ -1,0 +1,156 @@
+:root {
+  --background: #fff;
+  --primary: #ecece3;
+  --secondary: #79bfee;
+  --pino: #d6d29d;
+  --vege: #53642f;
+  --fifth: #2370b8;
+  --sixth: #89b2d8;
+  --seventh: #5e73cf;
+  --test: #3fFFFCE12d07;
+  --test2: #3f2d07;
+}
+
+#rain-animation img:not(.empanada-img) {
+  animation-name: stretch;
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-delay: 3;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.5);
+    bottom: 0
+  }
+
+  50% {
+    transform: scale(1.2);
+    bottom: 100px
+  }
+
+  100% {
+    transform: scale(0.5);
+    bottom: 200px
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.1;
+    border-radius: 20%;
+  }
+
+  40% {
+    opacity: .3;
+  }
+
+  100% {
+    transform: scale(3);
+    border-radius: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  20% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+
+
+.blobs {
+  align-items: center;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 1%;
+}
+
+.blobs .nav-item {
+  z-index: 1;
+}
+
+
+@keyframes rotating-dough {
+  from {
+    transform: translate3d(35px, 20px, 200px) rotate(10deg);
+  }
+
+  to {
+    transform: perspective(300px) translate3d(50px, 20px, 100px) rotate(180deg);
+  }
+}
+
+#dough {
+  background: var(--primary);
+  padding: 4%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: rotating-dough 5s infinite alternate;
+}
+
+@keyframes pino {
+  from {
+    transform: translate3d(35px, 20px, 3em);
+  }
+
+  to {
+    transform: perspective(300px) translate3d(50px, 20px, 100px);
+  }
+}
+
+#pino {
+  background: var(--pino);
+  padding: 4%;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: pino 7s infinite alternate;
+}
+
+@keyframes vege {
+  from {
+    transform: translate3d(35px, 20px, 3em);
+  }
+
+  to {
+    transform: perspective(300px) translate3d(50px, 20px, 100px);
+  }
+}
+
+#vege {
+  background-image: url("../images/empanada.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 4%;
+  clip-path: polygon(22% 20%, 31% 14%, 46% 10%, 57% 11%, 67% 19%, 70% 26%, 73% 34%, 77% 43%, 75% 49%, 75% 49%, 66% 46%, 51% 38%, 37% 32%, 19% 27%);
+  animation: vege 7s infinite alternate;
+}
+
+
+
+// #rain-room {
+//     background: var(--eigth);
+//     margin: -15%;
+//     animation: transform 30s ease-in-out infinite both alternate movement 40s ease-in-out infinite both;
+//     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+//     height: 130px;
+//     transition: all 10s ease-in-out;
+//     width: 130px;
+//     z-index: 0;
+//     transform-origin: 50% 50%;
+//     transform-style: preserve-3d;
+//     perspective: 1000px;
+//     transform: translate3d(0, 0, 0);
+//     animation: rise  infinite;
+//     animation-duration: 50s;
+// }
