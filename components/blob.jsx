@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Fab from '@mui/material/Fab';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { Box, Grid } from '@mui/material';
-import { AlignHorizontalCenter } from '@mui/icons-material';
 
 
 const Blob = (props) => {

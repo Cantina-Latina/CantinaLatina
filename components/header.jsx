@@ -20,7 +20,7 @@ export const sizes = {
 
 export const colours = {
   background: "#fff",
-  primary: "#382119",
+  primary: "#4f2601",
   secondary: "#c78e16",
   third: "#de841c",
   complimentary: "#3f2d07"
@@ -34,7 +34,6 @@ export const media = Object.keys(sizes).reduce((acc, size) => {
 const Logo = styled.img`
   height: 190px;
   user-select: none;
-  margin-bottom: 25px;
   ${media.sm} {
     height: 150px;
   }
@@ -60,23 +59,6 @@ const HeaderStyled = styled.header`
           radial-gradient(500px,  #FFF 10%,  ${colours.secondary});
     background-position: center 45%;
     background-size: cover;
-
-    // TODO fix page sizing
-    // ${media.sm} {
-    //   background-image: url(${stripes.src}),
-    //     radial-gradient(500px, #fff, #fff1e1 20%, #ffa0b1),
-    //     filter: invert(48%) sepia(79%) saturate(76%) brightness(18%) contrast(19%);
-    
-    // }
-
-    // @media (prefers-color-scheme: dark) {
-    //   background-image: url(${stripes.src}),
-    //     radial-gradient(350px, #521a22, #63242d 20%, #71444b);
-    //   ${media.sm} {
-    //     background-image: url(${stripes.src}),
-    //       radial-gradient(500px, #521a22, #63242d 20%, #71444b);
-    //   }
-    // }
   }
 `
 
