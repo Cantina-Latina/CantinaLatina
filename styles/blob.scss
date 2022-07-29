@@ -4,19 +4,11 @@
   --secondary: #79bfee;
   --pino: #d6d29d;
   --vege: #53642f;
-  --fifth: #2370b8;
+  --dough: #fff;
   --sixth: #89b2d8;
   --seventh: #956b2c;
   --test: #e4d4ae;
   --test2: #EAB22F;
-}
-
-#rain-animation img:not(.empanada-img) {
-  animation-name: stretch;
-  animation-duration: 10s;
-  animation-timing-function: ease-out;
-  animation-delay: 3;
-  animation-fill-mode: forwards;
 }
 
 @keyframes bubble {
@@ -61,40 +53,62 @@
 
 @keyframes rotating-dough {
   from { transform: translate3d(35px, 20px, 200px) rotate(10deg);}
-  to {transform: perspective(300px) translate3d(50px, 20px, 100px) rotate(180deg);}
+  to {transform: perspective(400px) translate3d(50px, 20px, 100px) rotate(180deg);}
 }
 
 #dough {
-  background: var(--primary);
+  background: var(--dough);
   padding: 4%;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: rotating-dough 5s infinite alternate;
 }
 
-@keyframes pino {
-  from { transform: translate3d(35px, 20px, 3em);}
-  to { transform: perspective(300px) translate3d(50px, 20px, 100px);}
+@keyframes pebre {
+  from { transform: perspective(300px) translate3d(45px, 20px, 3em);}
+  to { transform: perspective(200px) translate3d(50px, 30px, 2em);}
 }
 
-#pino {
-  background: var(--pino);
-  padding: 4%;
-  border-radius: 32% 68% 41% 59% / 82% 30% 70% 18% ;
-  animation: pino 7s infinite alternate;
+#pebre {
+  background-image: url("../images/pebre.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  animation-name: pebre;
+  animation-duration: 7s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
-@keyframes vege {
-  from { transform: translate3d(35px, 20px, 3em);}
-  to {transform: perspective(300px) translate3d(50px, 20px, 100px);}
+@keyframes empanadas {
+  from { transform: translate3d(35px, 20px, 3em) rotate(-15deg);}
+  to {transform: perspective(300px) translate3d(50px, 20px, 100px) rotate(-5deg);}
 }
 
-#vege {
+#empanadas {
   background-image: url("../images/empanada.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: contain;
-  animation: vege 7s infinite alternate;
+  animation-fill-mode: forwards;
+  animation: empanadas 7s infinite alternate;
+}
+
+#events {
+  background-image: url("../images/cantinaImages/P6180006.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  animation-fill-mode: forwards;
+  animation: empanadas 7s infinite alternate;
+  filter: sepia(20%); 
+  filter: saturate(0.3);
+  border: 5px solid #aaaa9e;
+  border-radius: 4%;
+
 }
 
 
