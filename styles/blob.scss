@@ -6,9 +6,9 @@
   --vege: #53642f;
   --fifth: #2370b8;
   --sixth: #89b2d8;
-  --seventh: #5e73cf;
-  --test: #3fFFFCE12d07;
-  --test2: #3f2d07;
+  --seventh: #956b2c;
+  --test: #e4d4ae;
+  --test2: #EAB22F;
 }
 
 #rain-animation img:not(.empanada-img) {
@@ -55,41 +55,13 @@
 }
 
 @keyframes rotate {
-  20% {
-    transform: rotate(90deg);
-  }
-
-  100% {
-    transform: rotate(90deg);
-  }
+  20% { transform: rotate(90deg);}
+  100% {transform: rotate(90deg);}
 }
-
-
-
-.blobs {
-  align-items: center;
-  display: flex;
-  height: 300px;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-bottom: 1%;
-}
-
-.blobs .nav-item {
-  z-index: 1;
-}
-
 
 @keyframes rotating-dough {
-  from {
-    transform: translate3d(35px, 20px, 200px) rotate(10deg);
-  }
-
-  to {
-    transform: perspective(300px) translate3d(50px, 20px, 100px) rotate(180deg);
-  }
+  from { transform: translate3d(35px, 20px, 200px) rotate(10deg);}
+  to {transform: perspective(300px) translate3d(50px, 20px, 100px) rotate(180deg);}
 }
 
 #dough {
@@ -100,30 +72,20 @@
 }
 
 @keyframes pino {
-  from {
-    transform: translate3d(35px, 20px, 3em);
-  }
-
-  to {
-    transform: perspective(300px) translate3d(50px, 20px, 100px);
-  }
+  from { transform: translate3d(35px, 20px, 3em);}
+  to { transform: perspective(300px) translate3d(50px, 20px, 100px);}
 }
 
 #pino {
   background: var(--pino);
   padding: 4%;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  border-radius: 32% 68% 41% 59% / 82% 30% 70% 18% ;
   animation: pino 7s infinite alternate;
 }
 
 @keyframes vege {
-  from {
-    transform: translate3d(35px, 20px, 3em);
-  }
-
-  to {
-    transform: perspective(300px) translate3d(50px, 20px, 100px);
-  }
+  from { transform: translate3d(35px, 20px, 3em);}
+  to {transform: perspective(300px) translate3d(50px, 20px, 100px);}
 }
 
 #vege {
@@ -131,8 +93,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  padding: 4%;
-  clip-path: polygon(22% 20%, 31% 14%, 46% 10%, 57% 11%, 67% 19%, 70% 26%, 73% 34%, 77% 43%, 75% 49%, 75% 49%, 66% 46%, 51% 38%, 37% 32%, 19% 27%);
+  background-size: contain;
   animation: vege 7s infinite alternate;
 }
 

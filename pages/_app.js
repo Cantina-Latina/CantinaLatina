@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import '../styles/global.scss';
+import '../styles/blob.scss';
 
 import React from 'react';
 import PropTypes from 'prop-types';

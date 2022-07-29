@@ -4,6 +4,7 @@ export default class RainAnimation {
         this.container = container
         this.props = props
         this.options = options
+        this.count = (options.totalItems ? options.totalItems : 100);
 
         this.container.style.height = '100vh'
         this.container.style.width = '100vw'
@@ -33,40 +34,50 @@ export default class RainAnimation {
      */
     rain() {
         let render = () => {
-            const Elem = document.createElement('div');
 
-            var r = this.options.rotate,
-                d = this.options.duration;
 
-            var rotate = this.getRandomInt(r ? r[0] : -40, r ? r[1] : 40),
-                duration = this.getRandomInt(d ? d[0] : 5, d ? d[1] : 13)
+            if (this.count > 0) {
 
-            Elem.classList.add('rain-animation')
-            Elem.style.left = Math.random() * 100 + '%'
-            Elem.style.position = 'fixed'
-            Elem.style.zIndex = 45
-            Elem.style.top = '-10vh'
-            Elem.animate([
-                { transform: 'translateY(0)' },
-                { transform: 'translateX(' + this.getRandomInt(5, 5)  + 'vw) translateY(150vh)' }
-            ], {
-                duration: duration * 1000,
-            })
-            const img = this.getImg();
+                const Elem = document.createElement('div');
 
-            img.animate([
-                { transform: 'rotate(' + rotate  + 'deg)' },
-                { transform: 'rotate(' + this.getRandomInt(rotate - 20, rotate + 20)  + 'deg)' }
-            ], {
-                duration: duration * 1000,
-            })
+                var r = this.options.rotate,
+                    d = this.options.duration;
 
-            Elem.appendChild(img);
-            this.container.appendChild(Elem);
+                var rotate = this.getRandomInt(r ? r[0] : -40, r ? r[1] : 40),
+                    duration = this.getRandomInt(d ? d[0] : 5, d ? d[1] : 13)
 
-            setTimeout(() => {
-                Elem.remove()
-            }, 15000)
+                Elem.classList.add('rain-animation')
+                Elem.style.left = Math.random() * 100 + '%'
+                Elem.style.position = 'fixed'
+                Elem.style.zIndex = 45
+                Elem.style.top = '-10vh'
+                Elem.animate([
+                    { transform: 'translateY(0)' },
+                    { transform: 'translateX(' + this.getRandomInt(5, 5)  + 'vw) translateY(150vh)' }
+                ], {
+                    duration: duration * 1000,
+                })
+                const img = this.getImg();
+
+                img.animate([
+                    { transform: 'rotate(' + rotate  + 'deg)' },
+                    { transform: 'rotate(' + this.getRandomInt(rotate - 20, rotate + 20)  + 'deg)' }
+                ], {
+                    duration: duration * 1000,
+                })
+
+                Elem.appendChild(img);
+                this.container.appendChild(Elem);
+
+                this.count--;
+                console.log(this.count)
+
+                setTimeout(() => {
+                    Elem.remove()
+                }, 15000)
+                
+            }
+            
 
         }
 
