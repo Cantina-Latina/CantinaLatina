@@ -1,5 +1,6 @@
 import Blob from './blob';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
+import { red } from '@mui/material/colors';
 
 export const Blobs = (props) => {
 
@@ -17,34 +18,33 @@ export const Blobs = (props) => {
 
   return (
 
-    <div>
+    <Box sx={{
+      backgroundColor: "#ecece3",
+      paddingBottom: "60px",
+      paddingRight: "80px"
+      }}>
       <Grid
         direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
+        justifyContent="center"
+        alignItems="flex-start"
         container
       >
+        {Blob({
+          divId: "empanadas",
+          blobHref: "/empanadas",
+          title: "Our Empanadas"
+        })}
         {Blob({
           divId: "dough",
           blobHref: "/dough",
           title: "Our Dough"
         })}
         {Blob({
-          divId: "pino",
-          blobHref: "/pino",
-          title: "Pino Empanadas"
-        })}
-        {Blob({
-          divId: "vege",
-          blobHref: "/vege",
-          title: "Vegetarian Empanadas"
-        })}
-        {Blob({
-          divId: "quesos",
-          blobHref: "/quesos",
-          title: "Tres Quesos Empanadas"
+          divId: "pebre",
+          blobHref: "/pebre",
+          title: "Pebre - Chili Sauce"
         })}
       </Grid>
-    </div>
+    </Box>
   );
 }
