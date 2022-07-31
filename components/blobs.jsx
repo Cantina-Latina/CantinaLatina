@@ -20,14 +20,16 @@ export const Blobs = (props) => {
 
     <Box sx={{
       backgroundColor: "#ecece3",
-      paddingBottom: "60px",
-      paddingRight: "80px"
+      paddingTop: "60px",
+      paddingBottom: "80px",
+      paddingRight: "60px"
       }}>
       <Grid
         direction="row"
         justifyContent="center"
         alignItems="flex-start"
         container
+        columnSpacing={{ md: 8, xl: 16}}
       >
         {Blob({
           divId: "empanadas",

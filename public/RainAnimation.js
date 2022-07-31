@@ -70,7 +70,6 @@ export default class RainAnimation {
                 this.container.appendChild(Elem);
 
                 this.count--;
-                console.log(this.count)
 
                 setTimeout(() => {
                     Elem.remove()
