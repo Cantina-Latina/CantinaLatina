@@ -16,7 +16,7 @@ const container = document.getElementById('rain-animation'),
         size: [15, 25],
         duration: [40, 20],   // rain
         amount: [30, 40],   // mousemove
-        totalItems: 50 // Zero is continuous rain
+        totalItems: 30 // Zero is continuous rain
     }
 
 

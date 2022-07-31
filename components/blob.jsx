@@ -16,7 +16,7 @@ const Blob = (props) => {
       </Box>
       <Link href={props.blobHref}>
         <Box  sx={{ paddingLeft: 12 }}>
-          <Fab className="nav-item" variant="extended" size="medium" color="primary" aria-label="add">
+          <Fab variant="extended" size="medium"  aria-label="add">
             <ChevronLeftIcon sx={{ mr: 1, color: '#FFFFFF' }}></ChevronLeftIcon>{props.title}
           </Fab>
         </Box>

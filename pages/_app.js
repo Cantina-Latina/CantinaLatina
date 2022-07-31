@@ -15,7 +15,7 @@ export default function MyApp(props) {
   const theme = createTheme({
     palette: {
       primary: {
-        // Purple and green play nicely together.
+        // not working for Fab !!!.
         main: purple[500],
       },
       secondary: {
