@@ -1,13 +1,17 @@
 {
   "name": "cantina-latina-website",
   "version": "1.0.1",
-  "license" : "GPL-3.0-or-later",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@fontsource/inspiration": "^4.5.8",
+    "@fontsource/mouse-memoirs": "^4.5.9",
+    "@fontsource/roboto": "^4.5.7",
+    "@fontsource/titan-one": "^4.5.8",
     "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
@@ -19,6 +23,4 @@
     "react-router-dom": "5.2.0",
     "sass": "^1.53.0"
   }
-  
-
 }

@@ -1,5 +1,6 @@
 import Header from './header'
 import Footer from './footer'
+import { PagesLayoutContainer } from "../components/pagesLayoutContainer"
 
 export default function Layout({ children }) {
 
@@ -8,11 +9,11 @@ export default function Layout({ children }) {
 
     const renderHeader = () => {
       if (isHomePage) {
-        return <Header />;
-
+        return <Header
+        picaroCss='margin-top: 20px;' 
+        />;
       } 
       else {
-
         return <Header
           stackDirection="row" 
           backgroundPos='0 5%' 
@@ -26,7 +27,9 @@ export default function Layout({ children }) {
     return (
         <>
             {renderHeader()}
-            <main >{children}</main>
+            <PagesLayoutContainer >
+              <main >{children}</main>
+            </PagesLayoutContainer >
             <Footer />
         </>
     )

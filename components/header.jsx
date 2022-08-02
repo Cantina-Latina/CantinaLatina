@@ -2,7 +2,7 @@ import React from 'react';
 import picaro from '../images/picaro-stroked.png';
 import stripes from '../images/coolness.svg';
 import styled from '@emotion/styled';
-import { Stack, Box } from '@mui/material';
+import { Stack, Box, AppBar } from '@mui/material';
 import MenuDrawer from './menuDrawer';
 
 
@@ -43,12 +43,13 @@ const Logo = styled.img`
   }
 `;
 
+
 const HeaderStyled = styled.header`
 
   color: ${colours.primary};
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
-  height: 75%;
+  //height: 75%;
   position: relative;
 
   &::before {
@@ -80,7 +81,7 @@ const BusinessTitle = styled.h1`
 const SubHeading = styled.h3`
   margin: 0;
   font-size: 1.45em;
-  //font-family: Roboto:wght@100;
+  font-weight: 300;
   ${media.lg} {
     font-size: 1.2em;
   }
@@ -95,19 +96,21 @@ const Header = (props) => {
   const picaroSize = (props.picaroSize) ? props.picaroSize : '190px';
   const picaroCss = (props.picaroCss) ? props.picaroCss : '';
   const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
-  const backgroundPadding = (stackDirection != 'column') ? '10px 45px' : '60px 25px 50px';
-  
+  const backgroundPadding = (stackDirection != 'column') ? '70px 80px 45px' : '60px 25px 50px';
+
 
   return (
     <>
-    
+    <AppBar position="fixed">
+      <MenuDrawer />
+    </AppBar>
     <HeaderStyled 
       backgroundPos={backgroundPos} 
       backgroundPadding={backgroundPadding}
       textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
       >
 
-      <MenuDrawer />
+      
 
       <Stack
         direction={stackDirection}

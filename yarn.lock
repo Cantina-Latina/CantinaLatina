@@ -158,6 +158,26 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@fontsource/inspiration@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/inspiration/-/inspiration-4.5.8.tgz#436c24daad1c92009c640c433bef116e4d50b798"
+  integrity sha512-ytGPJiP+sxy6WV2TGZNIW7GzDZcvDyUK4N3v0yHz3IP5aP/5G5BxC00NkXbIZsf7OX7BEk/XByMw8LVLrbJ/SA==
+
+"@fontsource/mouse-memoirs@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/mouse-memoirs/-/mouse-memoirs-4.5.9.tgz#27c8a32efa5f2a828e3c53898e639e8b11b94086"
+  integrity sha512-IcoQNyjSix+7Pa4Nc2M4SgcOsDRkYtsb8/bTTOdmUQtMSfOtMxpTS8e41cIefeU0uxv0dxJMzO2A900AMJLbSA==
+
+"@fontsource/roboto@^4.5.7":
+  version "4.5.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.7.tgz#292740a52fa2bac61b89f92e1c588037defe65cb"
+  integrity sha512-m57UMER23Mk6Drg9OjtHW1Y+0KPGyZfE5XJoPTOsLARLar6013kJj4X2HICt+iFLJqIgTahA/QAvSn9lwF1EEw==
+
+"@fontsource/titan-one@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/titan-one/-/titan-one-4.5.8.tgz#d02117d34cebbe5b58b7075ed6ba870bf7007889"
+  integrity sha512-eY1A1ryPtm13cSNPny2c7XBOLNPrKnOATb0+RNGdgIZwVVnZP6WwJeJNEqxzup7Vvg/D5hax7I0MVh5Q6Mqkiw==
+
 "@material-ui/core@^4.12.4":
   version "4.12.4"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.12.4.tgz#4ac17488e8fcaf55eb6a7f5efb2a131e10138a73"
