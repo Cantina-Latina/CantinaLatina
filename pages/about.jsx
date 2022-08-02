@@ -2,6 +2,7 @@ import { Typography } from "@mui/material"
 import { Box } from "@mui/system"
 import { Stack } from "@mui/material"
 import { useEffect, useState } from 'react'
+import ImageMozaic from "../components/imageMozaic"
 
 
 // Hook
@@ -29,7 +30,6 @@ function useWindowSize() {
         // Remove event listener on cleanup
         return () => window.removeEventListener("resize", handleResize);
     }, []); // Empty array ensures that effect is only run on mount
-    console.log(windowSize);
     return windowSize;
 }
 
@@ -49,7 +49,7 @@ export default function About({ children }) {
                     alignItems="flex-start"
                     spacing={8}>
 
-                    <Box maxWidth={800} minWidth={400}>
+                    <Box maxWidth={880} minWidth={420}>
                         <Typography variant="h3" >
                             About Cantina Latina
                         </Typography>
@@ -57,11 +57,25 @@ export default function About({ children }) {
                             Making fresh Empanadas since 2012
                         </Typography>
 
-                        <Typography><i>Our crisp, flavour-crammed empanadas are hand-made while you watch. Strong vegetarian and vegan options,
-                            or throw it all to the wind and get into the Pino: slow-cooked Tasmanian beef, golden onions, raisins, herbs, and olives.</i></Typography>
-                        <h3>asasdasdasd</h3>
-                        <p>sdfsdf</p>
+                        <Typography><i>"Crisp, flavour-crammed empanadas are hand-made while you watch. Strong vegetarian and vegan options,
+                            or throw it all to the wind and get into the Pino: slow-cooked Tasmanian beef, golden onions, raisins, herbs, and olives."</i><br />
+                            <strong>* Bio from the 2022 MOFO Winter Feast</strong>
+                        </Typography>
+
+                        <Typography variant="h5" >
+                            How did it all start?
+                        </Typography>
+
+
+                        <Typography>Chilean ex-pat <a href='https://www.facebook.com/joana.cubillos'>Joana Cubillos</a> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
+                        </Typography>
+                        <Typography variant="body1" color="initial">
+                            After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad <a href="https://www.facebook.com/philip.bohm">Philip (loco Rubio) Bohm</a> came on board and the permanent stall at Salamanca Market was born.
+                        </Typography>
+                        <ImageMozaic width={size.width} height={size.height} />
+
                     </Box>
+
                     <Box>
                         <Typography variant="h5" color="initial">Every Saturday at Salamanca Market</Typography>
                         <Typography>... you can buy our Empanadas at stall number 49. Thats on the roundabout near the Irish Murphies pub</Typography>
