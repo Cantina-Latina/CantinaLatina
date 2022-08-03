@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem } from "@mui/material"
+import { ImageList, ImageListItem} from "@mui/material"
 import img1 from "/images/cantinaImages/P1300076.jpg"
 import img2 from "/images/cantinaImages/P3040237.jpg"
 import img3 from "/images/cantinaImages/P6180006.jpg"
@@ -12,7 +12,7 @@ import img8 from "/images/cantinaImages/R0011330.jpg"
 const itemData = [
     {
         img: img1.src,
-        title: 'Salamanca Site 49',
+        title: 'Salamanca Market - Site 49 early days',
     },
     {
         img: img2.src,
@@ -36,25 +36,23 @@ const itemData = [
     },
     {
         img: img7.src,
-        title: 'Joana Y Felipe',
+        title: 'Joana Y Felipe - Rio De Jeneiro',
     },
     {
         img: img8.src,
-        title: 'Joana Y Felipe',
+        title: 'Joana Y Felipe - Madrid Espania',
     }
 ]
 
 export default function ImageMozaic( ) {
 
-    // todo get the passed in size
-
     return (
-        <ImageList sx={{ backgroundColor: 'black', width: 850, height: 550 }} cols={4} rowHeight={164}>
+        <ImageList variant="masonary" sx={{ }} cols={4} rowHeight={164}>
             {itemData.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
-                        src={`${item.img}?w=164&h=164&auto=format`}
-                        srcSet={`${item.img}?w=164&h=164&auto=format&dpr=2 2x`}
+                        src={`${item.img}?w=164&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=164&fit=crop&auto=format&dpr=2 2x`}
                         alt={item.title}
                         title={item.title}
                         loading="lazy"

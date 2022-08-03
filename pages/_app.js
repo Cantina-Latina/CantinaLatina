@@ -4,12 +4,13 @@ import '../styles/blob.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from '../components/layout'
 import { purple } from '@mui/material/colors';
 import '@fontsource/titan-one/400.css';
 import '@fontsource/mouse-memoirs/400.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -36,7 +37,10 @@ export default function MyApp(props) {
           },
           h3: {
             fontFamily: "'Mouse Memoirs', cursive",
-            fontWeight: 'lighter'
+            fontWeight: 'lighter',
+            paddingTop: '20px',
+
+            marginBottom: '0 !important' 
           },
           h4: {
             fontFamily: "'Mouse Memoirs', cursive",
@@ -44,7 +48,7 @@ export default function MyApp(props) {
           },
           h5: {
             fontFamily: "'Mouse Memoirs', cursive",
-            margin: '0 !important' 
+            marginBottom: '0 !important' 
           }
         }
       },
@@ -80,12 +84,16 @@ export default function MyApp(props) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" sizes="32x32" href="/favicon.ico" />
       </Head>
+      <ParallaxProvider>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-          <Component {...pageProps} />
+          
+            <Component {...pageProps} />
+          
         </Layout>
       </ThemeProvider>
+      </ParallaxProvider>
     </React.Fragment>
   );
 }

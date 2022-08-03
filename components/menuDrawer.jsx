@@ -14,18 +14,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import { MenuPageLinks } from './menuPageLinks';
+import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
+import { menuPageLinks } from './menuPageLinks';
 
 const drawerWidth = 240;
-
-const menuPageLinks = [
-    [ 'Home', '/'],
-    [ 'About Us', '/about'],
-    [ 'Our Empanadas', '/empanadas'],
-    [ 'Our Pebre - Chili Salsa', '/pebre'],
-    [ 'Gluten free', '/events'],
-]
 
 export default function MenuDrawer() {
     const theme = useTheme();
@@ -53,7 +46,7 @@ export default function MenuDrawer() {
         <>
             <Box sx={{marginLeft: 'auto', textAlign: 'center' , padding: '16px'}}>
 
-                <MenuPageLinksHorizontal menuPageLinks={menuPageLinks}/>
+                <MenuPageLinksHorizontal />
                 <IconButton
                     color="buttons"
                     aria-label="open drawer"
@@ -83,7 +76,7 @@ export default function MenuDrawer() {
                             {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
                     </DrawerHeader>
-                    <MenuPageLinks menuPageLinks={menuPageLinks} />
+                    <MenuPageLinksList />
                     <Divider />
                     <List>
                         {['All mail', 'Trash', 'Spam'].map((text, index) => (

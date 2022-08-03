@@ -16,18 +16,23 @@ export const Blobs = (props) => {
       >
         {Blob({
           divId: "empanadas",
-          blobHref: "/empanadas",
+          blobHref: "/about/#empanadas",
           title: "Our Empanadas"
         })}
         {Blob({
-          divId: "dough",
-          blobHref: "/dough",
-          title: "Our Dough"
+          divId: "events",
+          blobHref: "/about/#events",
+          title: "Events"
         })}
         {Blob({
           divId: "pebre",
-          blobHref: "/pebre",
+          blobHref: "/about/#pebre-menu",
           title: "Pebre - Chili Sauce"
+        })}
+        {Blob({
+          divId: "dough",
+          blobHref: "/about#dough-menu",
+          title: "Our Dough"
         })}
       </Grid>
   );

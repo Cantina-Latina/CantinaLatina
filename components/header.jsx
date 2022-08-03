@@ -4,6 +4,7 @@ import stripes from '../images/coolness.svg';
 import styled from '@emotion/styled';
 import { Stack, Box, AppBar } from '@mui/material';
 import MenuDrawer from './menuDrawer';
+import { Parallax } from 'react-scroll-parallax';
 
 
 // MUI sizes
@@ -101,44 +102,45 @@ const Header = (props) => {
 
   return (
     <>
-    <AppBar position="fixed">
-      <MenuDrawer />
-    </AppBar>
-    <HeaderStyled 
-      backgroundPos={backgroundPos} 
-      backgroundPadding={backgroundPadding}
-      textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
+      <AppBar position="fixed">
+        <MenuDrawer />
+      </AppBar>
+      <HeaderStyled
+        backgroundPos={backgroundPos}
+        backgroundPadding={backgroundPadding}
+        textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
       >
 
-      
 
-      <Stack
-        direction={stackDirection}
-        alignItems="center"
-        spacing={3}
-      >
-        <Box >
-          <picture >
-            <Logo 
-              src={picaro.src} 
-              alt="Cantina Latina Logo" 
-              draggable="false" 
-              picaroSize={picaroSize}
-              picaroCss={picaroCss}  />
-          </picture>
-        </Box>
-        <Box>
-          <BusinessTitle fontSize={(stackDirection == 'column') ? '5em': '4em'}>
-            Cantina Latina
-          </BusinessTitle>
-          <SubHeading>Empanada Specialists - Salamanca Market Hobart Tasmania</SubHeading>
-        </Box>
+        <Parallax speed={-3}>
+          <Stack
+            direction={stackDirection}
+            alignItems="center"
+            spacing={3}
+          >
+            <Box >
+              <picture >
+                <Logo
+                  src={picaro.src}
+                  alt="Cantina Latina Logo"
+                  draggable="false"
+                  picaroSize={picaroSize}
+                  picaroCss={picaroCss} />
+              </picture>
+            </Box>
+            <Box>
+              <BusinessTitle fontSize={(stackDirection == 'column') ? '5em' : '4em'}>
+                Cantina Latina
+              </BusinessTitle>
+              <SubHeading>Empanada Specialists - Salamanca Market Hobart Tasmania</SubHeading>
+            </Box>
 
-      </Stack>
+          </Stack>
+        </Parallax>
 
-    </HeaderStyled>
+      </HeaderStyled>
     </>
-   
+
 
   );
 
