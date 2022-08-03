@@ -1,27 +1,26 @@
 import Blob from './blob';
 import { Box, Grid } from '@mui/material';
-import { red } from '@mui/material/colors';
 
 export const Blobs = (props) => {
 
   return (
 
-    
+
       <Grid
         direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
+  justifyContent="center"
+  alignItems="baseline"
         container
         columnSpacing={{ md: 8, xl: 16}}
       >
         {Blob({
           divId: "empanadas",
-          blobHref: "/about/#empanadas",
+          blobHref: "/about/#ourMenu",
           title: "Our Empanadas"
         })}
         {Blob({
           divId: "events",
-          blobHref: "/about/#events",
+          blobHref: "/about/#eventInfo",
           title: "Events"
         })}
         {Blob({

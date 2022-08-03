@@ -85,7 +85,10 @@ export default function About({ children }) {
                                 What we do today?
                             </Typography>
 
-                            <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. Please feel free to contact us to talk about your upcoming event</Typography>
+                            <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
+                            <Typography variant="h5">
+                            Please feel free to <a href="contact">contact us</a> to talk about your upcoming event!
+                            </Typography>
 
                             <Typography variant="body2">At Salamanca we cant offer oven baked as we dont have electricity
                             </Typography>
@@ -93,15 +96,14 @@ export default function About({ children }) {
 
                     </main>
                     <ParallaxPageBox>
+                        <OurMenu />
+                    </ParallaxPageBox>
+
+                    <ParallaxPageBox>
                         <Typography variant="h3">
                             Photos from the vault
                         </Typography>
                         <ImageMozaic />
-                    </ParallaxPageBox>
-
-
-                    <ParallaxPageBox>
-                        <OurMenu />
                     </ParallaxPageBox>
 
                 </Box>
