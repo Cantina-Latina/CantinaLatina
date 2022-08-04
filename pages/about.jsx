@@ -87,11 +87,9 @@ export default function About({ children }) {
 
                             <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
                             <Typography variant="h5">
-                            Please feel free to <a href="contact">contact us</a> to talk about your upcoming event!
+                            Please feel free to <a href="contact">contact us</a> about your upcoming event!
                             </Typography>
-
-                            <Typography variant="body2">At Salamanca we cant offer oven baked as we dont have electricity
-                            </Typography>
+                    
                         </ParallaxPageBox>
 
                     </main>

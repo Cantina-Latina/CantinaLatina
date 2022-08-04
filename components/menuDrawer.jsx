@@ -40,11 +40,11 @@ export default function MenuDrawer() {
     const handleDrawerClose = () => {
         setOpen(false);
     };
-``
+    ``
     return (
 
         <>
-            <Box sx={{marginLeft: 'auto', textAlign: 'center' , padding: '16px'}}>
+            <Box sx={{ marginLeft: 'auto', textAlign: 'center', padding: '16px' }}>
 
                 <MenuPageLinksHorizontal />
                 <IconButton
@@ -53,45 +53,47 @@ export default function MenuDrawer() {
                     edge="end"
                     size="large"
                     onClick={handleDrawerOpen}
-                    sx={{ ...(open && { display: 'true' }), float: 'right', padding: '3px 60px'}}
+                    sx={{ ...(open && { display: 'true' }), float: 'right', padding: '3px 60px' }}
                 >
-                <MenuIcon />
-            </IconButton>
+                    <MenuIcon />
+                </IconButton>
             </Box>
-                <Drawer
-                    sx={{
+            <Drawer
+                sx={{
+                    width: drawerWidth,
+                    flexShrink: 0,
+                    '& .MuiDrawer-paper': {
                         width: drawerWidth,
-                        flexShrink: 0,
-                        '& .MuiDrawer-paper': {
-                            width: drawerWidth,
-                            backgroundColor: '#dbbb7a' // todo create color like buttons
-                        },
-                    }}
-                    variant="persistent"
-                    anchor="right"
-                    open={open}
-                >
-                    <DrawerHeader>
-                        <IconButton onClick={handleDrawerClose} color="buttons">
-                            {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-                        </IconButton>
-                    </DrawerHeader>
-                    <MenuPageLinksList />
-                    <Divider />
-                    <List>
-                        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                            <ListItem key={text} disablePadding>
-                                <ListItemButton>
-                                    <ListItemIcon>
-                                        {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                                    </ListItemIcon>
-                                    <ListItemText primary={text} />
-                                </ListItemButton>
-                            </ListItem>
-                        ))}
-                    </List>
-                </Drawer>
-            
+                        backgroundColor: '#dbbb7a', // todo create color like buttons
+                        transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+                        boxShadow: '0px 0px 10px -2px rgba(0,0,0,0.75)',
+                    },
+                }}
+            variant="persistent"
+            anchor="right"
+            open={open}
+            >
+            <DrawerHeader>
+                <IconButton onClick={handleDrawerClose} color="buttons">
+                    {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+                </IconButton>
+            </DrawerHeader>
+            <MenuPageLinksList />
+            <Divider />
+            <List>
+                {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                    <ListItem key={text} disablePadding>
+                        <ListItemButton>
+                            <ListItemIcon>
+                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                            </ListItemIcon>
+                            <ListItemText primary={text} />
+                        </ListItemButton>
+                    </ListItem>
+                ))}
+            </List>
+        </Drawer>
+
         </>
     );
 }

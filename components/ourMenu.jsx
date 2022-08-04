@@ -62,7 +62,7 @@ export const OurMenu = () => {
                     <GridItems
                         id="vege-menu"
                         pictureSrc={vege.src}
-                        label={"The Vegetariana "}
+                        label={"The Vegetariana"}
                         speil={speil.vege}
                     ></GridItems>
                     <GridItems
