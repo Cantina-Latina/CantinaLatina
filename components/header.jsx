@@ -48,6 +48,8 @@ const Logo = styled.img`
 const HeaderStyled = styled.header`
 
   color: ${colours.primary};
+  display: flex; 
+  justify-content: center;
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
   //height: 75%;
@@ -112,7 +114,7 @@ const Header = (props) => {
       >
 
 
-        <Parallax speed={-3}>
+        <Parallax speed={-3} >
           <Stack
             direction={stackDirection}
             alignItems="center"

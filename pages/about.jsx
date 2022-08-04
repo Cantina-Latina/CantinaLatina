@@ -47,50 +47,51 @@ export default function About({ children }) {
     return (
 
         <>
-            <Stack direction="row"
+            {/* <Stack direction="row"
                 justifyContent="space-between"
                 alignItems="flex-start"
-                spacing={8}>
+                spacing={8}> */}
 
 
-                <Box maxWidth={880} minWidth={420}>
-
+                {/* <Box maxWidth={880} minWidth={420}> */}
+                <Box>
                     <main>
-                        <ParallaxPageBox>
-                            <Typography variant="h2" >
-                                About Cantina Latina
-                            </Typography>
-                            <Typography variant="h5" >
-                                Making fresh Empanadas since 2013
-                            </Typography>
+                    <ParallaxPageBox bgColor={"aliceblue"}>
+                        <Typography variant="h2" >
+                            About Cantina Latina
+                        </Typography>
+                        <Typography variant="h5" >
+                            Making fresh Empanadas since 2013
+                        </Typography>
 
-                            <Typography variant="h6"><i>"Crisp, flavour-crammed empanadas are hand-made while you watch. Strong vegetarian and vegan options,
-                                or throw it all to the wind and get into the Pino: slow-cooked Tasmanian beef, golden onions, raisins, herbs, and olives."</i>
-                            </Typography>
-                            <Typography>
-                                <strong>* Bio from the 2022 MOFO Winter Feast</strong>
-                            </Typography>
-                        </ParallaxPageBox>
-                        <ParallaxPageBox>
-                            <Typography variant="h3" >
-                                How did it all start?
-                            </Typography>
-                            <Typography variant="body2">Chilean ex-pat <Link color={"#0E46AD"} to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
-                            </Typography>
-                            <Typography variant="body2" color="initial">
-                                After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad <Link color={"#0E46AD"} to="https://www.facebook.com/philip.bohm">Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
-                            </Typography>
+                        <Typography variant="h6"><i>"Crisp, flavour-crammed empanadas are hand-made while you watch. Strong vegetarian and vegan options,
+                            or throw it all to the wind and get into the Pino: slow-cooked Tasmanian beef, golden onions, raisins, herbs, and olives."</i>
+                        </Typography>
+                        <Typography>
+                            <strong>* Bio from the 2022 MOFO Winter Feast</strong>
+                        </Typography>
+                    </ParallaxPageBox>
 
-                            <Typography variant="h3" id="eventInfo" >
-                                What we do today?
-                            </Typography>
+                    <ParallaxPageBox>
+                        <Typography variant="h3" >
+                            How did it all start?
+                        </Typography>
+                        <Typography variant="body2">Chilean ex-pat <Link color={"#0E46AD"} to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
+                        </Typography>
+                        <Typography variant="body2" color="initial">
+                            After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad <Link color={"#0E46AD"} to="https://www.facebook.com/philip.bohm">Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
+                        </Typography>
 
-                            <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
-                            <Typography variant="h5">
-                            Please feel free to <a href="contact">contact us</a> about your upcoming event!
-                            </Typography>
-                    
-                        </ParallaxPageBox>
+                        <Typography variant="h3" id="eventInfo" >
+                            What we do today?
+                        </Typography>
+
+                        <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
+                        <Typography variant="h5">
+                        Please feel free to <a href="contact">contact us</a> about your upcoming event!
+                        </Typography>
+                
+                    </ParallaxPageBox>
 
                     </main>
                     <ParallaxPageBox>
@@ -105,7 +106,7 @@ export default function About({ children }) {
                     </ParallaxPageBox>
 
                 </Box>
-                <Parallax translateY={[-20, 60]}>
+                {/* <Parallax translateY={[-20, 60]}>
                     <Box width={size.width}>
                         <Typography variant="h4" color="initial">Every Saturday at Salamanca Market</Typography>
                         <Typography>Come and get our Empanadas at stall number 49. Thats on the roundabout near the Irish Murphies pub</Typography>
@@ -115,9 +116,9 @@ export default function About({ children }) {
                         </Box>
 
                     </Box>
-                </Parallax>
+                </Parallax> */}
 
-            </Stack>
+            {/* </Stack> */}
 
 
         </>
