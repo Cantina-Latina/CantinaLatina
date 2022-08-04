@@ -1,35 +1,45 @@
 import { Box } from "@mui/material";
 import { Parallax } from "react-scroll-parallax";
+import {Typography} from "@mui/material";
 
 export const ParallaxPageBox = ({ children, bgColor }) => {
 
-    bgColor = (bgColor != undefined) ? bgColor : "#FFFFFF" ;
+    bgColor = (bgColor != undefined) ? bgColor : "#FFFFFF";
 
     return (
         <>
-            <Parallax speed={-5} style={{
-                    //backgroundColor: 'grey',
-                    //margin: "50px",
-                    //padding: "50px 75px", 
-                    //padding: "4px",
-                    //borderRadius: "5px" 
-                }}>
-                    <Box 
-                    justifyContent="center" 
-                    maxWidth={880} minWidth={420}
-        
-                    sx={{
-                        backgroundColor: bgColor,
-                        //margin: "-1px",
-                        //marginBottom: "100px",
-                        padding: "50px 75px",
-                        borderRadius: "4px"
-                    }}
-                    >
+            <Box
+                sx={{
+                    backgroundColor: bgColor,
+                    justifyContent: 'center',
+                    textAlign: 'inherit',
+                    padding: '200px 80px 45px',
+                    paddingTop: "160px",
+                    //marginBottom: "100px",
+                    //padding: "50px 75px",
+                    //borderRadius: "4px"
+                }}
+            >
 
+
+                <Box sx={{
+                    backgroundColor: bgColor,
+                    justifyContent: 'center',
+                    maxWidth: "800px",
+                    minWidth: "420px",
+                    margin: '0 auto'
+                }}>
+
+                    <Parallax speed={-5}  >
                         {children}
-                    </Box>
-            </Parallax>
+
+                        <Typography></Typography>
+                    </Parallax>
+                </Box>
+
+
+
+            </Box>
         </>
 
     )

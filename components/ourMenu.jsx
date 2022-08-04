@@ -47,7 +47,12 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
 export const OurMenu = () => {
     return (
         
-            <Box id="ourMenu" sx={{position: "relative"}} >
+            <Box id="ourMenu" sx={{ 
+                position: 'relative', 
+                background: 'white', 
+                padding: '40px',
+                borderRadius: '4px'
+                }} >
                 <Typography variant="h3">
                     Our regular menu
                 </Typography>

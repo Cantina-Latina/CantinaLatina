@@ -47,13 +47,10 @@ export default function Contact({ children }) {
     return (
 
         <>
-            <Stack direction="row"
-                justifyContent="space-between"
-                alignItems="flex-start"
-                spacing={8}>
 
-
-                <Box maxWidth={880} minWidth={420}>
+                <Box style={{
+                }}
+                > 
 
                     <main>
                         <ParallaxPageBox>
@@ -64,7 +61,6 @@ export default function Contact({ children }) {
 
                 </Box>
 
-            </Stack>
 
 
         </>

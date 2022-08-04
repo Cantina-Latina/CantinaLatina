@@ -64,7 +64,7 @@ export default function MenuDrawer() {
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
                         width: drawerWidth,
-                        backgroundColor: '#dbbb7a', // todo create color like buttons
+                        backgroundColor: '#595959', // todo create color like buttons
                         transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
                         boxShadow: '0px 0px 10px -2px rgba(0,0,0,0.75)',
                     },

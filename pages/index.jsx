@@ -3,6 +3,7 @@ import { Blobs } from '../components/blobs';
 import { OurMenu } from '../components/ourMenu';
 import { Box } from '@mui/material';
 import { ParallaxPageBox } from '../components/parallaxPageBox';
+import About from './about';
 
 
 
@@ -14,11 +15,13 @@ function HomePage({ }) {
       <Script type="module" src="/rainMaker.js" />
         <Blobs />
 
-        <Box sx={{alignItems:"center", maxWidth:"1600px", margin: "150px auto"}}>
-        <ParallaxPageBox>
+        <Box sx={{alignItems:"center",  margin: "90px auto 0 auto", position: "relative"}}>
+        {/* <ParallaxPageBox sx={{}}> */}
+        {/* border:'2px solid black',  borderRadius:'30px', */}
 
-        <OurMenu />
-        </ParallaxPageBox>
+        {/* <OurMenu /> */}
+        <About />   
+        {/* </ParallaxPageBox> */}
         </Box>
 
     </>

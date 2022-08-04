@@ -99,7 +99,8 @@ const Header = (props) => {
   const picaroSize = (props.picaroSize) ? props.picaroSize : '190px';
   const picaroCss = (props.picaroCss) ? props.picaroCss : '';
   const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
-  const backgroundPadding = (stackDirection != 'column') ? '70px 80px 45px' : '60px 25px 50px';
+  
+  const backgroundPadding = (stackDirection != 'column') ? '70px 235px 45px 80px' : '60px 25px 50px 25px';
 
 
   return (
@@ -108,9 +109,10 @@ const Header = (props) => {
         <MenuDrawer />
       </AppBar>
       <HeaderStyled
+        //style={{paddingRight: '200px'}}
         backgroundPos={backgroundPos}
         backgroundPadding={backgroundPadding}
-        textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
+        //textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
       >
 
 
@@ -118,7 +120,7 @@ const Header = (props) => {
           <Stack
             direction={stackDirection}
             alignItems="center"
-            spacing={3}
+            spacing={5}
           >
             <Box >
               <picture >
