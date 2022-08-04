@@ -100,10 +100,10 @@ export default function About({ children }) {
                         <ImageMozaic />
                     </ParallaxPageBox>
 
-                    <ParallaxPageBox bgColor={'#CB992D'}>
+                    <ParallaxPageBox bgColor={'#0E46AD'}>
                         <Box >
-                        <Typography variant="h4" color="initial">Every Saturday at Salamanca Market</Typography>
-                        <Typography>Come and get our Empanadas at stall number 49. Thats on the roundabout near the Irish Murphies pub</Typography>
+                        <Typography variant="h2"  color="white">Every Saturday at Salamanca Market</Typography>
+                        <Typography color="white">Come and get our Empanadas at stall number 49. Thats on the roundabout near the Irish Murphies pub</Typography>
                         <Box height={size.height}  >
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.1543227399657!2d147.32860811584175!3d-42.886617946124936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa6e7510d22ab3e9%3A0x1bf6625effa1c676!2sCantina%20Latina!5e0!3m2!1sen!2sau!4v1659350949974!5m2!1sen!2sau"
                                 height="100%" width="100%" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

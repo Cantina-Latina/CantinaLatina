@@ -15,13 +15,30 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
-  const theme = createTheme({
+  const headFooterColor = '#272100';
 
+  const theme = createTheme({
+    palette: {
+      primary: {
+        // todo not working for Fab !!!.
+        main: purple[500],
+      },
+      secondary: {
+        // This is green.A700 as hex.
+        main: '#11cb5f',
+      },
+      buttons: {
+        main: '#cc9631',
+      },
+      headfoot: {
+        main: headFooterColor,
+      },
+    },
     components: {
       MuiAppBar: {
         styleOverrides: {
           colorPrimary: {
-            backgroundColor: "#190c01"
+            backgroundColor: headFooterColor,
           }
         }
       },
@@ -53,20 +70,8 @@ export default function MyApp(props) {
         }
       },
       
-    },
-    palette: {
-      primary: {
-        // todo not working for Fab !!!.
-        main: purple[500],
-      },
-      secondary: {
-        // This is green.A700 as hex.
-        main: '#11cb5f',
-      },
-      buttons: {
-        main: '#cc9631',
-      },
     }
+    
   });
 
   useEffect(() => {

@@ -105,7 +105,7 @@ const Header = (props) => {
 
   return (
     <>
-      <AppBar position="fixed">
+      <AppBar position="fixed" >
         <MenuDrawer />
       </AppBar>
       <HeaderStyled

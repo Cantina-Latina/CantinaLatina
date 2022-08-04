@@ -9,7 +9,7 @@ export const MenuPageLinksHorizontal = () => {
         <>
         <ButtonGroup variant="text" color="buttons" size="small" aria-label="small button group">
             {MenuPageLinks.map((item) => (
-                <Button sx={{padding: "0 15px"}} key={item[0]} href={item[1]} >
+                <Button sx={{ display: { sm: 'none', md: 'block' }, padding: "0 15px"}} key={item[0]} href={item[1]} >
                     {item[0]}
                 </Button>
             ))}

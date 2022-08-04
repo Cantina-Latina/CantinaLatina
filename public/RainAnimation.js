@@ -20,11 +20,11 @@ export default class RainAnimation {
         var s = this.options.size;
         const selectedProp = this.props[Math.floor(Math.random() * this.props.length)];
         img.src = selectedProp;
-        img.width = (selectedProp.includes("empanada")) ? 200 : this.getRandomInt(s ? s[0] : 10, s = s ? s[1] : 15);
+        img.width = (selectedProp.includes("empanada")) ? 50 : this.getRandomInt(s ? s[0] : 10, s = s ? s[1] : 15);
         if (selectedProp.includes("empanada")) {
-            // add popup when hovering
-            img.classList.add('empanada-img');
+            img.classList.add('empanada-img')
         }
+        
         return img;
     }
 
@@ -59,12 +59,24 @@ export default class RainAnimation {
                 })
                 const img = this.getImg();
 
-                img.animate([
+                if (img.className == 'empanada-img') {
+                    console.log(img.className);
+                    img.animate([
+                        { transform: 'rotate(' + this.getRandomInt(rotate - 450, rotate + 200)  + 'deg)' }
+                    ], {
+                        duration: duration * 1500,
+                    })
+                }
+                else {
+                    img.animate([
                     { transform: 'rotate(' + rotate  + 'deg)' },
                     { transform: 'rotate(' + this.getRandomInt(rotate - 20, rotate + 20)  + 'deg)' }
                 ], {
                     duration: duration * 1000,
                 })
+                }
+
+                
 
                 Elem.appendChild(img);
                 this.container.appendChild(Elem);
