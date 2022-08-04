@@ -93,7 +93,7 @@ export default function About({ children }) {
                         <OurMenu />
                     </ParallaxPageBox>
 
-                    <ParallaxPageBox bgColor={"black"}>
+                    <ParallaxPageBox bgColor={"#4f5058"}>
                         <Typography variant="h3" color="white">
                             Photos from the vault
                         </Typography>

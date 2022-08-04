@@ -60,7 +60,7 @@ export default class RainAnimation {
                 const img = this.getImg();
 
                 if (img.className == 'empanada-img') {
-                    console.log(img.className);
+                    
                     img.animate([
                         { transform: 'rotate(' + this.getRandomInt(rotate - 450, rotate + 200)  + 'deg)' }
                     ], {
