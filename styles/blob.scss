@@ -11,20 +11,6 @@
   --test2: #EAB22F;
 }
 
-#rain-animation img:not(.empanada-img) {
-  animation-name: stretch;
-  animation-duration: 10s;
-  animation-timing-function: ease-out;
-  animation-delay: 3;
-  animation-fill-mode: forwards;
-}
-
-iframe {
-  border: 5px solid white;
-}
-
-
-
 @keyframes bubble {
   0% {
     transform: scale(0.5);

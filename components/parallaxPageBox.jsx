@@ -2,13 +2,13 @@ import { Box } from "@mui/material";
 import { Parallax } from "react-scroll-parallax";
 import {Typography} from "@mui/material";
 
-export const ParallaxPageBox = ({ children, bgColor }) => {
+export const ParallaxPageBox = ({ id, children, bgColor }) => {
 
-    bgColor = (bgColor != undefined) ? bgColor : "#FFFFFF";
+    bgColor = (bgColor != undefined) ? bgColor : "inherit";
 
     return (
         <>
-            <Box
+            <Box id={id}
                 sx={{
                     backgroundColor: bgColor,
                     justifyContent: 'center',

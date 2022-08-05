@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import '../styles/globals.scss';
 import '../styles/blob.scss';
 
 import React from 'react';

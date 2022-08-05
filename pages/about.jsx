@@ -6,6 +6,8 @@ import ImageMozaic from "../components/imageMozaic"
 import { Parallax } from 'react-scroll-parallax'
 import { OurMenu } from "../components/ourMenu"
 import { ParallaxPageBox } from '../components/parallaxPageBox'
+//import { ReactRotatingText } from '../components/react-rotating-text'
+var ReactRotatingText = require('react-rotating-text');
 
 
 
@@ -95,13 +97,25 @@ export default function About({ children }) {
 
                     <ParallaxPageBox bgColor={"#4f5058"}>
                         <Typography variant="h3" color="white">
-                            Photos from the vault
+                            Photos from the <ReactRotatingText 
+                            cursor={false} 
+                            items={['vault', 'beginnings', 'historicos']} 
+                            pause={2500}
+                            emptyPause={1500}
+                            typingInterval={75}
+                            deletingInterval={75}
+                            />
                         </Typography>
                         <ImageMozaic />
                     </ParallaxPageBox>
 
-                    <ParallaxPageBox bgColor={'#0E46AD'}>
-                        <Box >
+                    <ParallaxPageBox id="googleMapsLocator" bgColor={'#0E46AD'} >
+
+                        <Box sx={{ 
+                            position: 'relative', 
+                            padding: '40px',
+                            borderRadius: '4px'
+                            }} >
                         <Typography variant="h2"  color="white">Every Saturday at Salamanca Market</Typography>
                         <Typography color="white">Come and get our Empanadas at stall number 49. Thats on the roundabout near the Irish Murphies pub</Typography>
                         <Box height={size.height}  >
