@@ -98,7 +98,7 @@ export default function About({ children }) {
                     <ParallaxPageBox bgColor={"#4f5058"}>
                         <Typography variant="h3" color="white">
                             Photos from the <ReactRotatingText 
-                            cursor={false} 
+                            cursor={true} 
                             items={['vault', 'beginnings', 'historicos']} 
                             pause={2500}
                             emptyPause={1500}
