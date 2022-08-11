@@ -71,10 +71,11 @@ export default function About({ children }) {
                         <Typography variant="h3" >
                             How did it all start?
                         </Typography>
-                        <Typography >Chilean ex-pat <Link color={"#0E46AD"} to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
+                        <Typography >Chilean ex-pat <Link  to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
                         </Typography>
                         <Typography  color="initial">
-                            After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad <Link color={"#0E46AD"} to="https://www.facebook.com/philip.bohm">Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
+                            After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad 
+                             <Link to="https://www.facebook.com/philip.bohm"> Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
                         </Typography>
 
                         <Typography variant="h3" id="eventInfo" >
@@ -83,9 +84,21 @@ export default function About({ children }) {
 
                         <Typography >Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
                         <Typography variant="h6">
-                        Please feel free to <a href="contact">contact us</a> about your upcoming event!
+                        Please feel free to <Link href="contact">contact us</Link> about your upcoming event!
                         </Typography>
                 
+                    </ParallaxPageBox>
+
+                    <ParallaxPageBox id={'dough-menu'} >
+                        <Typography variant="h3" id="eventInfo" >
+                            Whats our dough recipe?
+                        </Typography>
+
+                        <Typography >Every so often out comes this question from our customers, resulting in the usual evasive tactics while quietly evading properly answering this question.</Typography>
+                        <Typography ><strong>The answer is no real secret. Its wheat flour</strong>, sorry to the celiacs and those wishing to copy our light crunchy dough.</Typography>
+                        <Typography >We had a red hot attempt at creating a gluten free empanada and failed miserable. Additionally logistically at Salamanca we cant have a seperate section to keep gluten free items completely isolated.</Typography>
+                        <Typography >We do have an alternate gluten free recipe we can provide for events however. Give us a <Link href="contact">quick email</Link> to discuss the options.</Typography>
+                        
                     </ParallaxPageBox>
 
                     </main>

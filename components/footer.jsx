@@ -28,7 +28,7 @@ const Footer = (props) => {
                     </Grid>
                 <Grid item  xs={6} md={8}>
                     <Typography variant='cramped'>Cantina Latina dosen't really need a web page. As much as we would like to have an online store, our empanadas are enjoyed best freshly made and eaten on the spot.</Typography> 
-                    <Typography variant='cramped'>We do the socials like everybody else. Contact us via email so that we both dont miss your message or read our latest posts on Facebook and Instagram</Typography>
+                    <Typography variant='cramped'>We do the socials like everybody else. <Link href="contact">Contact us</Link> via email so that we both dont miss your message or read our latest posts on Facebook and Instagram</Typography>
                     <Typography variant='cramped'>This page is a demonstration of a hand coded site using <Link to="Next.js" >Next.js</Link> and Material design just for Philip's benefit.</Typography>
                     </Grid>
                 </Grid>
