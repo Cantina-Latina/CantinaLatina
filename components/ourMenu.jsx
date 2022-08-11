@@ -8,11 +8,11 @@ import pebre from "../images/productPhotos/pebre.jpg"
 import vegan from "../images/productPhotos/vegan.png"
 
 const speil = {
-    pino: "Its meaty goodness",
-    vege: "Its got no meat",
-    queso: "Three types of cheese",
-    pebre: "Included with every Empanada, on the side of course. We sell it by the jar.",
-    vegan: "Our vegana is brill  with meat and cheese"
+    pino: "Tasmanian pulled beef, golden onions, raisins, herbs, olive and egg",
+    vege: "Caramelized leeks and onions, sauteed mushrooms, silverbeet and Tasmanian Cheddar",
+    queso: "Ashgrove Smoked Cheddar, Tasmanian Cheddar and mozzarella cheese",
+    pebre: "Included with every Empanada, on the side of course! We also sell it by the jar.",
+    vegan: "Caramelized leeks and onions, sautéed mushrooms, fresh silverbeet"
 }
 
 const GridItems = ({ pictureSrc, label, speil, id }) => {
@@ -36,7 +36,7 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                 </Box>
             </Grid>
             <Grid item xs={6} md={8}>
-                <Typography variant="body2">
+                <Typography sx={{fontFamily: 'specky1'}}>
                     {speil}</Typography>
             </Grid>
         </>
@@ -53,8 +53,8 @@ export const OurMenu = () => {
                 padding: '40px',
                 borderRadius: '4px'
                 }} >
-                <Typography variant="h2">
-                    Our regular menu
+                <Typography variant="h3">
+                    Our regular Saturday menu:
                 </Typography>
                 <Box sx={{ height: 20 }} ></Box>
                 <Grid container spacing={2}>

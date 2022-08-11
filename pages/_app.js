@@ -67,6 +67,10 @@ export default function MyApp(props) {
           h5: {
             fontFamily: "'Mouse Memoirs', cursive",
             marginBottom: '0 !important' 
+          },
+          specky1: {
+            fontFamily: "'Helvetica', cursive",
+            marginBottom: '0 !important' 
           }
         }
       },
