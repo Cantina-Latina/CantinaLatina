@@ -64,7 +64,12 @@ export default function MyApp(props) {
           h5: {
             fontFamily: '"Source Sans Pro", sans-serif',
             fontWeight: 'bolder',
+            fontSize: 'large',
             marginBottom: '0 !important' 
+          },
+          h6: {
+            fontFamily: '"Source Sans Pro", sans-serif',
+            fontWeight: 'bolder'
           }
         },
         variants: [
