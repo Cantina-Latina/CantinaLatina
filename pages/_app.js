@@ -5,31 +5,28 @@ import '../styles/blob.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from '../components/layout'
-import { purple } from '@mui/material/colors';
 import '@fontsource/titan-one/400.css';
 import '@fontsource/mouse-memoirs/400.css';
+import '@fontsource/quicksand';
+import "@fontsource/source-sans-pro";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   const headFooterColor = '#272100';
+  const headFooterFontColor = '#cc9631';
 
   const theme = createTheme({
+    typography: {
+      fontFamily: 'quicksand'
+    },
     palette: {
-      primary: {
-        // todo not working for Fab !!!.
-        main: purple[500],
-      },
-      secondary: {
-        // This is green.A700 as hex.
-        main: '#11cb5f',
-      },
       buttons: {
-        main: '#cc9631',
+        main: headFooterFontColor,
       },
       headfoot: {
         main: headFooterColor,
@@ -40,6 +37,7 @@ export default function MyApp(props) {
         styleOverrides: {
           colorPrimary: {
             backgroundColor: headFooterColor,
+            color: headFooterFontColor
           }
         }
       },
@@ -57,7 +55,6 @@ export default function MyApp(props) {
             fontFamily: "'Mouse Memoirs', cursive",
             fontWeight: 'lighter',
             paddingTop: '20px',
-
             marginBottom: '0 !important' 
           },
           h4: {
@@ -65,14 +62,21 @@ export default function MyApp(props) {
             fontWeight: 'lighter'
           },
           h5: {
-            fontFamily: "'Mouse Memoirs', cursive",
-            marginBottom: '0 !important' 
-          },
-          specky1: {
-            fontFamily: "'Helvetica', cursive",
+            fontFamily: '"Source Sans Pro", sans-serif',
+            fontWeight: 'bolder',
             marginBottom: '0 !important' 
           }
-        }
+        },
+        variants: [
+          {
+            props: { variant: 'cramped' },
+            style: {
+              margin: '10px 0 10px 0 !important',
+              display: 'block'
+            },
+
+          },
+        ]
       },
       
     }

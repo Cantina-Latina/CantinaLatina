@@ -7,6 +7,8 @@ import queso from "../images/productPhotos/queso.jpg"
 import pebre from "../images/productPhotos/pebre-full.jpg"
 import vegan from "../images/productPhotos/vegan.png"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import BrokenImage from '@material-ui/icons/BrokenImage';
+import Image from 'material-ui-image';
 
 const speil = {
     pino: "Tasmanian pulled beef, golden onions, raisins, herbs, kalamata olive and a slice of egg",
@@ -26,18 +28,13 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                 </Typography>
             </Grid>
             <Grid item xs={6} md={4} >
-                <Box sx={{borderRadius: "4px", position: "static", overflow: "hidden"}} >
-                <img
+                <Image 
+                    aspectRatio={1.6}
                     src={pictureSrc}
-                    width={"100%"}
-                    srcSet={pictureSrc}
-                    alt={label}
-                    loading="lazy"
                 />
-                </Box>
             </Grid>
             <Grid item xs={6} md={8}>
-                <Typography variant={'h6'} >
+                <Typography  >
                     <i><FormatQuoteIcon fontSize="small" />{speil}<FormatQuoteIcon color='#333333' fontSize="small" /></i></Typography>
             </Grid>
         </>

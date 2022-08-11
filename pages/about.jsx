@@ -71,9 +71,9 @@ export default function About({ children }) {
                         <Typography variant="h3" >
                             How did it all start?
                         </Typography>
-                        <Typography variant="body2">Chilean ex-pat <Link color={"#0E46AD"} to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
+                        <Typography >Chilean ex-pat <Link color={"#0E46AD"} to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
                         </Typography>
-                        <Typography variant="body2" color="initial">
+                        <Typography  color="initial">
                             After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad <Link color={"#0E46AD"} to="https://www.facebook.com/philip.bohm">Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
                         </Typography>
 
@@ -81,8 +81,8 @@ export default function About({ children }) {
                             What we do today?
                         </Typography>
 
-                        <Typography variant="body2">Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
-                        <Typography variant="h5">
+                        <Typography >Every saturday we are at Salamanca Market from 8am to 3pm serving Empanadas from our market stall. Sometimes we are also doing other events in parallel. From the huge enterprize of the MOFO Winter Feast to supplying a small office party, we have it covered. </Typography>
+                        <Typography variant="h6">
                         Please feel free to <a href="contact">contact us</a> about your upcoming event!
                         </Typography>
                 
