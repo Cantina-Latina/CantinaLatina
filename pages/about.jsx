@@ -48,21 +48,21 @@ export default function About({ children }) {
 
         <>
 
-                <Box id="munted">
+                <Box id="about">
                     <main>
                     <ParallaxPageBox bgColor={"#595959"} 
                     >
                         <Typography variant="h2" style={{color : "#FFFFFF", margin: '0px'}} >
                             About Cantina Latina
                         </Typography>
-                        <Typography variant="h4" >
+                        <Typography variant="h4" style={{color: "#D69C1E"}}>
                             Making fresh Empanadas since 2013
                         </Typography>
 
                         <Typography variant="h6" style={{color : "#FFFFFF"}}><i>"Crisp, flavour-crammed empanadas are hand-made while you watch. Strong vegetarian and vegan options,
                             or throw it all to the wind and get into the Pino: slow-cooked Tasmanian beef, golden onions, raisins, herbs, and olives."</i>
                         </Typography>
-                        <Typography >
+                        <Typography variant="caption" style={{color : "#cccccc"}} >
                             <strong>* Bio from the 2022 MOFO Winter Feast</strong>
                         </Typography>
                     </ParallaxPageBox>
