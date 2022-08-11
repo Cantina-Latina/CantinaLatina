@@ -49,11 +49,11 @@ export const OurMenu = () => {
         
             <Box id="ourMenu" sx={{ 
                 position: 'relative', 
-                background: 'white', 
+                backgroundColor: '#FFFFFF', 
                 padding: '40px',
                 borderRadius: '4px'
                 }} >
-                <Typography variant="h3">
+                <Typography variant="h2">
                     Our regular menu
                 </Typography>
                 <Box sx={{ height: 20 }} ></Box>

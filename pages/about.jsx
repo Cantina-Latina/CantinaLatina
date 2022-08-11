@@ -1,9 +1,7 @@
 import { Typography, Link } from "@mui/material"
 import { Box } from "@mui/system"
-import { Stack } from "@mui/material"
 import { useEffect, useState } from 'react'
 import ImageMozaic from "../components/imageMozaic"
-import { Parallax } from 'react-scroll-parallax'
 import { OurMenu } from "../components/ourMenu"
 import { ParallaxPageBox } from '../components/parallaxPageBox'
 //import { ReactRotatingText } from '../components/react-rotating-text'
@@ -91,7 +89,7 @@ export default function About({ children }) {
                     </ParallaxPageBox>
 
                     </main>
-                    <ParallaxPageBox bgColor={'#CB992D'}>
+                    <ParallaxPageBox >
                         <OurMenu />
                     </ParallaxPageBox>
 
