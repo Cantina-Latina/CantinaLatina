@@ -73,7 +73,7 @@ export default function About({ children }) {
                         </Typography>
                         <Typography >Chilean ex-pat <Link  to='https://www.facebook.com/joana.cubillos'>Joana Cubillos</Link> after finishing a science degree and completing a PHD in marine biology and expecting a child in the next few months decided to try with a friend, Chilean Fernanda Sotomayor to make and sell Empanadas to other chileans craving the popular street food.
                         </Typography>
-                        <Typography  color="initial">
+                        <Typography>
                             After several successful events like the Cygnet Folk Festival, Wooden Boat Festival, Hobart Twilight Market, Sandy Bay Easter Long weekend celebration, they tried as casuals at Salamanca market which went well. Fernanda returned to Chile and Joana's partner and new dad 
                              <Link to="https://www.facebook.com/philip.bohm"> Philip (loco Rubio) Bohm</Link> came on board and the permanent stall at Salamanca Market was born.
                         </Typography>

@@ -6,12 +6,18 @@ import { Link } from '@mui/material';
 
 const currentYear = "2022";
 
+
+const WhiteFooterType = styled(Typography)(({ theme }) => ({
+
+    color: 'white',
+    margin: '10px 0 10px 0 !important',
+    display: 'block'
+}));
+
 const Footer = (props) => {
 
-    console.log(props);
     const theme = useTheme();
 
-    console.log(theme);
     return (
         <Box id="footer"
 
@@ -23,7 +29,7 @@ const Footer = (props) => {
             }}>
             <Grid
                 container
-                spacing={2}
+                spacing={6}
                 direction="row"
                 justifyContent="space-between"
                 alignItems="center"
@@ -31,13 +37,13 @@ const Footer = (props) => {
             >
 
                 <Grid item md={12} lg={4}>
-                    <Typography variant={'h6'} >Website by Philip Bohm @{currentYear}</Typography>
+                    <WhiteFooterType variant={'h6'} >Website by Philip Bohm @{currentYear}</WhiteFooterType>
                 </Grid>
                 <Grid item  md={8} lg={4}>
                     
-                        <Typography variant='cramped'>Cantina Latina dosen't really need a web page. As much as we would like to have an online store, our empanadas are enjoyed best freshly made and eaten on the spot.</Typography>
-                        <Typography variant='cramped'>We do the socials like everybody else. <Link sx={{color: 'white', textDecoration: 'underline'}} href="contact">Contact us</Link> via email so that we both dont miss your message or read our latest posts on Facebook and Instagram</Typography>
-                        <Typography variant='cramped'>This page is a demonstration of a hand coded site using <Link to="Next.js" sx={{color: 'white', textDecoration: 'underline'}}>Next.js</Link> and Material design just for Philip's benefit.</Typography>
+                        <WhiteFooterType>Cantina Latina dosen't really need a web page. As much as we would like to have an online store, our empanadas are enjoyed best freshly made and eaten on the spot.</WhiteFooterType>
+                        <WhiteFooterType>Yes we do the socials like everybody else. <Link sx={{color: 'white', textDecoration: 'underline'}} href="contact">Contact us</Link> via email so that we both dont miss your message or read our latest posts on Facebook and Instagram.</WhiteFooterType>
+                        <WhiteFooterType>This page is a demonstration of a hand coded site using <Link to="Next.js" sx={{color: 'white', textDecoration: 'underline'}}>Next.js</Link> and Material design just for Philip's benefit.</WhiteFooterType>
                     
                 </Grid>
                 <Grid item md={false} lg={4}>

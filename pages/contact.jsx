@@ -54,7 +54,7 @@ export default function Contact({ children }) {
 
                     <main>
                         <ParallaxPageBox>
-                            asdasd
+                        <a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x74;&#x61;&#x73;&#x63;&#x61;&#x6E;&#x74;&#x69;&#x6E;&#x61;&#x6C;&#x61;&#x74;&#x69;&#x6E;&#x61;&#x5B;&#x61;&#x74;&#x5D;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">&#x74;&#x61;&#x73;&#x63;&#x61;&#x6E;&#x74;&#x69;&#x6E;&#x61;&#x6C;&#x61;&#x74;&#x69;&#x6E;&#x61;&#x5B;&#x61;&#x74;&#x5D;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;</a>
                         </ParallaxPageBox>
                     </main>
 

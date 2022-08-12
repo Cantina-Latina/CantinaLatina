@@ -45,7 +45,8 @@ export default function MyApp(props) {
       MuiTypography: {
         styleOverrides: {
           root: {
-            margin: '10px 0 30px 0 !important' 
+            margin: '10px 0 30px 0 !important',
+            color: "#272100"
           },
           h2: {
             fontFamily: "'Mouse Memoirs', cursive",
@@ -55,7 +56,7 @@ export default function MyApp(props) {
             fontFamily: "'Mouse Memoirs', cursive",
             fontWeight: 'lighter',
             paddingTop: '20px',
-            marginBottom: '0 !important' 
+            marginBottom: '0 !important'
           },
           h4: {
             fontFamily: "'Mouse Memoirs', cursive",
@@ -69,6 +70,7 @@ export default function MyApp(props) {
           },
           h6: {
             fontFamily: '"Source Sans Pro", sans-serif',
+            fontSize: 'normal',
             fontWeight: 'bolder'
           }
         },
@@ -79,7 +81,6 @@ export default function MyApp(props) {
               margin: '10px 0 10px 0 !important',
               display: 'block'
             },
-
           },
         ]
       },

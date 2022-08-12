@@ -22,11 +22,9 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
 
     return (
         <>
-            <Grid item xs={12} md={12}>
-                <Typography variant="h5" id={id}>
-                    {label}
-                </Typography>
-            </Grid>
+            {/* <Grid item xs={12} md={12}>
+                
+            </Grid> */}
             <Grid item xs={6} md={4} >
                 <Image 
                     aspectRatio={1.6}
@@ -34,6 +32,9 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                 />
             </Grid>
             <Grid item xs={6} md={8}>
+                <Typography variant="h5" id={id} style={{color: "#272100"}}>
+                    {label}
+                </Typography>
                 <Typography  >
                     <i><FormatQuoteIcon fontSize="small" />{speil}<FormatQuoteIcon color='#333333' fontSize="small" /></i></Typography>
             </Grid>
