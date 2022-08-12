@@ -16,7 +16,6 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
-import { menuPageLinks } from './menuPageLinks';
 
 const drawerWidth = 240;
 
@@ -40,15 +39,14 @@ export default function MenuDrawer() {
     const handleDrawerClose = () => {
         setOpen(false);
     };
-    ``
+    
     return (
-
         <>
             <Box id="menuDrawer" sx={{  marginLeft: 'auto', textAlign: 'center', padding: '16px' }}>
 
                 <MenuPageLinksHorizontal />
                 <IconButton
-                    color="buttons"
+                    color="headfoot"
                     aria-label="open drawer"
                     edge="end"
                     size="large"
@@ -82,7 +80,7 @@ export default function MenuDrawer() {
                 <MenuPageLinksList />
                 <Divider />
                 <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                    {['Email Us', 'Trash', 'Spam'].map((text, index) => (
                         <ListItem key={text} disablePadding>
                             <ListItemButton>
                                 <ListItemIcon>

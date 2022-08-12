@@ -3,7 +3,7 @@ import '../styles/globals.scss';
 import '../styles/blob.scss';
 
 import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -18,18 +18,20 @@ export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   const headFooterColor = '#272100';
-  const headFooterFontColor = '#cc9631';
+  const headFooterFontColor = '#CC9631';
 
   const theme = createTheme({
     typography: {
       fontFamily: 'quicksand'
     },
     palette: {
-      buttons: {
-        main: headFooterFontColor,
-      },
+      // buttons: {
+      //   main: headFooterFontColor,
+      // },
       headfoot: {
-        main: headFooterColor,
+        main: headFooterFontColor,
+        headFooterColor: headFooterColor,
+        headFooterFontColor: headFooterFontColor
       },
     },
     components: {
@@ -118,7 +120,7 @@ export default function MyApp(props) {
   );
 }
 
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  pageProps: PropTypes.object.isRequired,
-};
+// MyApp.propTypes = {
+//   Component: PropTypes.elementType.isRequired,
+//   pageProps: PropTypes.object.isRequired,
+// };
