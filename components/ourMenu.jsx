@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import {Box} from "@mui/material"
 import { Grid } from "@material-ui/core";
 import pino from "../images/productPhotos/pino.jpg"
 import vege from "../images/productPhotos/vege.jpg"
@@ -7,7 +7,6 @@ import queso from "../images/productPhotos/queso.jpg"
 import pebre from "../images/productPhotos/pebre-full.jpg"
 import vegan from "../images/productPhotos/vegan.png"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import BrokenImage from '@material-ui/icons/BrokenImage';
 import Image from 'material-ui-image';
 
 const speil = {

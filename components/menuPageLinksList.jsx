@@ -9,9 +9,9 @@ export const MenuPageLinksList = () => {
 
     return (
 
-        <List>
+        <List dense>
             {MenuPageLinks.map((item) => (
-                <ListItem key={item[0]} disablePadding>
+                <ListItem key={item[0]} >
                     <ListItemButton to={item[1]} >
                         {item[0]}
                     </ListItemButton>

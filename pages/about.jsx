@@ -1,5 +1,5 @@
 import { Typography, Link } from "@mui/material"
-import { Box } from "@mui/system"
+import {Box} from "@mui/material"
 import { useEffect, useState } from 'react'
 import ImageMozaic from "../components/imageMozaic"
 import { OurMenu } from "../components/ourMenu"
@@ -94,30 +94,16 @@ export default function About({ children }) {
                             Whats our dough recipe?
                         </Typography>
 
-                        <Typography >Every so often out comes this question from our customers, resulting in the usual evasive tactics while quietly evading properly answering this question.</Typography>
+                        <Typography >Every so often out comes this question from our customers, resulting in the usual polite evasive answer to this question.</Typography>
                         <Typography ><strong>The answer is no real secret. Its wheat flour</strong>, sorry to the celiacs and those wishing to copy our light crunchy dough.</Typography>
-                        <Typography >We had a red hot attempt at creating a gluten free empanada and failed miserable. Additionally logistically at Salamanca we cant have a seperate section to keep gluten free items completely isolated.</Typography>
-                        <Typography >We do have an alternate gluten free recipe we can provide for events however. Give us a <Link href="contact">quick email</Link> to discuss the options.</Typography>
+                        <Typography >We had a red hot attempt at creating a gluten free empanada however logistically at Salamanca we can't have a seperate preparation section to keep gluten free items completely isolated.</Typography>
+                        <Typography >We do have an alternate gluten free recipe we can provide for events however! Give us a <Link href="contact">quick email</Link> to discuss the options.</Typography>
                         
                     </ParallaxPageBox>
 
                     </main>
                     <ParallaxPageBox >
                         <OurMenu />
-                    </ParallaxPageBox>
-
-                    <ParallaxPageBox bgColor={"#4f5058"}>
-                        <Typography variant="h3" color="white">
-                            Photos from the <ReactRotatingText 
-                            cursor={true} 
-                            items={['vault', 'beginnings', 'historicos']} 
-                            pause={2500}
-                            emptyPause={1500}
-                            typingInterval={75}
-                            deletingInterval={75}
-                            />
-                        </Typography>
-                        <ImageMozaic />
                     </ParallaxPageBox>
 
                     <ParallaxPageBox id="googleMapsLocator" bgColor={'#0E46AD'} >
@@ -136,6 +122,21 @@ export default function About({ children }) {
 
                     </Box>
                     </ParallaxPageBox>
+
+                    <ParallaxPageBox bgColor={"#4f5058"}>
+                        <Typography variant="h3" color="white">
+                            Photos from the <ReactRotatingText 
+                            cursor={true} 
+                            items={['vault', 'beginnings', 'historicos']} 
+                            pause={2500}
+                            emptyPause={1500}
+                            typingInterval={75}
+                            deletingInterval={75}
+                            />
+                        </Typography>
+                        <ImageMozaic />
+                    </ParallaxPageBox>
+
                 </Box>
 
 

@@ -16,6 +16,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
+import { MenuPageLinksSocialsList } from './menuPageLinksSocialsList'
 
 const drawerWidth = 240;
 
@@ -79,18 +80,9 @@ export default function MenuDrawer() {
                 </DrawerHeader>
                 <MenuPageLinksList />
                 <Divider />
-                <List>
-                    {['Email Us', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem key={text} disablePadding>
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                                </ListItemIcon>
-                                <ListItemText primary={text} />
-                            </ListItemButton>
-                        </ListItem>
-                    ))}
-                </List>
+
+                <MenuPageLinksSocialsList />
+
             </Drawer>
 
         </>

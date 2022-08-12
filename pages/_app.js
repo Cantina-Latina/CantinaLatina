@@ -19,6 +19,7 @@ export default function MyApp(props) {
 
   const headFooterColor = '#272100';
   const headFooterFontColor = '#CC9631';
+  const headFooterLinkColor = '#E38D2B';
 
   const theme = createTheme({
     typography: {
@@ -31,15 +32,16 @@ export default function MyApp(props) {
       headfoot: {
         main: headFooterFontColor,
         headFooterColor: headFooterColor,
-        headFooterFontColor: headFooterFontColor
-      },
+        headFooterFontColor: headFooterFontColor,
+        headFooterLinkColor: headFooterLinkColor
+      }
     },
     components: {
       MuiAppBar: {
         styleOverrides: {
           colorPrimary: {
             backgroundColor: headFooterColor,
-            color: headFooterFontColor
+            //color: headFooterFontColor
           }
         }
       },
