@@ -16,7 +16,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
-import { MenuPageLinksSocialsList } from './menuPageLinksSocialsList'
+import { SocialsList } from './socialsList'
 
 const drawerWidth = 240;
 
@@ -81,7 +81,7 @@ export default function MenuDrawer() {
                 <MenuPageLinksList />
                 <Divider />
 
-                <MenuPageLinksSocialsList />
+                <SocialsList textcolor="inherit"/>
 
             </Drawer>
 

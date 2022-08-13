@@ -8,12 +8,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import { Email } from "react-obfuscate-email";
-import { Button } from '@mui/material';
+import { Button, useTheme } from '@mui/material';
 
 
 const MenuPageSocialLinks = [
     {
         title: 'Email Us',
+        label: 'Email',
         link: 'tascantinalatina@gmail.com',
         icon: <EmailIcon />,
         mailtoLink: true
@@ -33,7 +34,9 @@ const MenuPageSocialLinks = [
 ];
 
 
-export const MenuPageLinksSocialsList = () => {
+export const SocialsList = (props) => {
+
+    const { textcolor, ...others } = props;
 
     return (
         <>
@@ -41,12 +44,13 @@ export const MenuPageLinksSocialsList = () => {
 
             <List dense={true}>
                 {MenuPageSocialLinks.map((item) => (
-                    <ListItem key={item.label} disablePadding>
+                    <ListItem key={item.label} >
 
                         {item.icon}
+
                         {(item.mailtoLink) ?
-                            <ListItemButton><Email email={item.link} subject="Web Enquiry">{item.title}</Email></ListItemButton>
-                            : <ListItemButton to={item.link}>
+                            <ListItemButton ><Email style={{color: textcolor, textDecoration: 'none', fontWeight: 'bolder'}} email={item.link} subject="Web Enquiry">{item.title}</Email></ListItemButton>
+                            : <ListItemButton style={{color: textcolor,  fontWeight: 'bolder'}} to={item.link}>
                                 {item.label}
                             </ListItemButton>
                         }

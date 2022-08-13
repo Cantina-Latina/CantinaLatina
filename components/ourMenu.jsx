@@ -46,7 +46,7 @@ export const OurMenu = () => {
     return (
         
             <Box id="ourMenu" sx={{ 
-                position: 'relative', 
+                //position: 'relative', 
                 backgroundColor: '#FFFFFF', 
                 padding: '40px',
                 borderRadius: '4px'
