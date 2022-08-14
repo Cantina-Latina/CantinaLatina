@@ -21,10 +21,6 @@
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
-<<<<<<< HEAD
-    "gh-pages": "^4.0.0",
-=======
->>>>>>> e41e48c (deployment fix)
     "material-ui-icons": "^1.0.0-beta.36",
     "material-ui-image": "^3.3.2",
     "next": "^12.2.2",
@@ -39,6 +35,4 @@
     "sass": "^1.53.0",
     "gh-pages": "^4.0.0"
   }
-  
-
 }
