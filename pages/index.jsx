@@ -11,6 +11,8 @@ function HomePage({ }) {
 
   return (
     <>
+      <Script src="/mousePosition.js" />
+
       <div id="rain-animation"></div>
       <Script type="module" src="/rainMaker.js" />
         <Blobs />

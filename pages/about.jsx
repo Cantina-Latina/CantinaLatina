@@ -54,7 +54,7 @@ export default function About({ children }) {
                         <Typography variant="h2" style={{color : "#FFFFFF", margin: '0px'}} >
                             About Cantina Latina
                         </Typography>
-                        <Typography variant="h4" style={{color: "#D69C1E"}}>
+                        <Typography id="muntedTransition" variant="h4" style={{color: "#D69C1E"}}>
                             Making fresh Empanadas since 2013
                         </Typography>
 
