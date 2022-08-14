@@ -1,13 +1,16 @@
+
+// adapted from https://codesandbox.io/s/celfx
 import rainAnimation from '/RainAnimation.js'
 
 
 const container = document.getElementById('rain-animation'),
     props = [
-        //'./props/empanada.png',
-        './props/confetti_large_green.svg',
+        './props/empanada.png',
+        './props/confetti_large_yellow.svg',
+        './props/confetti_large_big_yellow.svg',
         './props/confetti_small_big_yellow.svg',
         './props/confetti_large_big_red.svg',
-        './props/confetti_large_blue.svg',
+        './props/confetti_small_big_red.svg',
         './props/confetti_small_red.svg'
     ],
     options = {

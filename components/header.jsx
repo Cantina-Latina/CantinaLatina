@@ -2,6 +2,10 @@ import React from 'react';
 import picaro from '../images/picaro-stroked.png';
 import stripes from '../images/coolness.svg';
 import styled from '@emotion/styled';
+import { Stack, Box, AppBar } from '@mui/material';
+import MenuDrawer from './menuDrawer';
+import { Parallax } from 'react-scroll-parallax';
+
 
 // MUI sizes
 // xs, extra-small: 0px
@@ -32,19 +36,23 @@ export const media = Object.keys(sizes).reduce((acc, size) => {
 }, {});
 
 const Logo = styled.img`
-  height: 190px;
+  height: ${(props) => props.picaroSize};
+  ${(props) => props.picaroCss}
   user-select: none;
   ${media.sm} {
     height: 150px;
   }
 `;
 
+
 const HeaderStyled = styled.header`
 
   color: ${colours.primary};
-  text-align: center;
-  padding: 60px 25px 50px;
-  height: 75%;
+  display: flex; 
+  justify-content: center;
+  text-align: ${(props) => props.textAlign};
+  padding: ${(props) => props.backgroundPadding};
+  //height: 75%;
   position: relative;
 
   &::before {
@@ -57,15 +65,15 @@ const HeaderStyled = styled.header`
     z-index: -1;
       background-image: url(${stripes.src}),
           radial-gradient(500px,  #FFF 10%,  ${colours.secondary});
-    background-position: center 45%;
-    background-size: cover;
+    background-position:  ${(props) => props.backgroundPos};
+    background-size:  cover ;
   }
 `
 
 const BusinessTitle = styled.h1`
     font-family: 'Titan One', cursive;
     margin: 0;
-    font-size: 5em;
+    font-size: ${(props) => props.fontSize};
     ${media.lg} {
       font-size: 4em;
     }
@@ -76,7 +84,7 @@ const BusinessTitle = styled.h1`
 const SubHeading = styled.h3`
   margin: 0;
   font-size: 1.45em;
-  font-family: Roboto:wght@100;
+  font-weight: 300;
   ${media.lg} {
     font-size: 1.2em;
   }
@@ -87,19 +95,56 @@ const SubHeading = styled.h3`
 
 const Header = (props) => {
 
-  return (
-    <HeaderStyled>
-      <div>
-      <picture >
-        <Logo src={picaro.src} alt="Cantina Latina Logo" draggable="false" />
-      </picture>
-      </div>
+  const backgroundPos = (props.backgroundPos) ? props.backgroundPos : 'center 45%';
+  const picaroSize = (props.picaroSize) ? props.picaroSize : '190px';
+  const picaroCss = (props.picaroCss) ? props.picaroCss : '';
+  const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
+  
+  const backgroundPadding = (stackDirection != 'column') ? '70px 235px 45px 80px' : '60px 25px 50px 25px';
 
-      <BusinessTitle>
-        Cantina Latina
-      </BusinessTitle>
-      <SubHeading>Empanada Specialists - Salamanca Market Hobart Tasmania</SubHeading> 
-    </HeaderStyled>
+
+  return (
+    <>
+      <AppBar position="fixed" >
+        <MenuDrawer />
+      </AppBar>
+      <HeaderStyled
+        //style={{paddingRight: '200px'}}
+        backgroundPos={backgroundPos}
+        backgroundPadding={backgroundPadding}
+        //textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
+      >
+
+
+        <Parallax speed={-3} >
+          <Stack
+            direction={stackDirection}
+            alignItems="center"
+            spacing={5}
+          >
+            <Box >
+              <picture >
+                <Logo
+                  src={picaro.src}
+                  alt="Cantina Latina Logo"
+                  draggable="false"
+                  picaroSize={picaroSize}
+                  picaroCss={picaroCss} />
+              </picture>
+            </Box>
+            <Box>
+              <BusinessTitle fontSize={(stackDirection == 'column') ? '5em' : '4em'}>
+                Cantina Latina
+              </BusinessTitle>
+              <SubHeading>Empanada Specialists - Salamanca Market Hobart Tasmania</SubHeading>
+            </Box>
+
+          </Stack>
+        </Parallax>
+
+      </HeaderStyled>
+    </>
+
 
   );
 

@@ -11,14 +11,6 @@
   --test2: #EAB22F;
 }
 
-#rain-animation img:not(.empanada-img) {
-  animation-name: stretch;
-  animation-duration: 10s;
-  animation-timing-function: ease-out;
-  animation-delay: 3;
-  animation-fill-mode: forwards;
-}
-
 @keyframes bubble {
   0% {
     transform: scale(0.5);
@@ -84,7 +76,7 @@
   background-size: contain;
   animation-name: pebre;
   animation-duration: 7s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 10;
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
@@ -102,6 +94,21 @@
   background-size: contain;
   animation-fill-mode: forwards;
   animation: empanadas 7s infinite alternate;
+}
+
+#events {
+  background-image: url("../images/cantinaImages/P6180006.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  animation-fill-mode: forwards;
+  animation: empanadas 7s infinite alternate;
+  filter: sepia(20%); 
+  filter: saturate(0.3);
+  border: 5px solid #aaaa9e;
+  border-radius: 4%;
+
 }
 
 
