@@ -2,8 +2,13 @@
   "name": "cantina-latina-website",
   "version": "1.0.1",
   "license": "GPL-3.0-or-later",
+  "homepage": "https://Cantina-Latina.github.io/CantinaLatina",
+  "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -27,6 +32,9 @@
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scroll-parallax": "^3.2.0",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "gh-pages": "^4.0.0"
   }
+  
+
 }
