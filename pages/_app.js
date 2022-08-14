@@ -17,8 +17,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
-  const headFooterColor = '#272100';
-  const headFooterFontColor = '#CC9631';
+  const headFooterColor = '#191705';
+  const headFooterFontColor = '#dbb56d';
   const headFooterLinkColor = '#E38D2B';
 
   const theme = createTheme({
@@ -50,7 +50,7 @@ export default function MyApp(props) {
         styleOverrides: {
           root: {
             margin: '10px 0 30px 0 !important',
-            color: "#272100"
+            //color: "#272100"
           },
           h2: {
             fontFamily: "'Mouse Memoirs', cursive",

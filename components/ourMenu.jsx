@@ -31,7 +31,7 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                 />
             </Grid>
             <Grid item xs={6} md={8}>
-                <Typography variant="h5" id={id} style={{color: "#272100"}}>
+                <Typography variant="h5" id={id} >
                     {label}
                 </Typography>
                 <Typography  >

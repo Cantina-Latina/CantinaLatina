@@ -50,11 +50,11 @@ export default function About({ children }) {
 
                 <Box id="about">
                     <main>
-                    <ParallaxPageBox bgColor={"#595959"} >
+                    <ParallaxPageBox   bgColor={"#595959"} >
                         <Typography variant="h2" style={{color : "#FFFFFF", margin: '0px'}} >
                             About Cantina Latina
                         </Typography>
-                        <Typography id="muntedTransition" variant="h4" style={{color: "#D69C1E"}}>
+                        <Typography  className="muntedTransition" variant="h4" style={{color: "#D69C1E", padding: "10px"}}>
                             Making fresh Empanadas since 2013
                         </Typography>
 
