@@ -101,13 +101,9 @@ const Header = (props) => {
   const picaroSize = (props.picaroSize) ? props.picaroSize : '190px';
   const picaroCss = (props.picaroCss) ? props.picaroCss : '';
   const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
-<<<<<<< HEAD
-=======
   
-  const backgroundPadding = (stackDirection != 'column') ? '70px 35px 45px 80px' : '60px 25px 50px 25px';
->>>>>>> 69110db (Fixes for the smallest screens, phones)
-
   const backgroundPadding = (stackDirection != 'column') ? '70px 35px 45px 20px' : '60px 25px 50px 25px';
+
 
   return (
     <>
