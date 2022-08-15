@@ -33,17 +33,17 @@ const Footer = (props) => {
                 alignItems="center"
             >
 
-                <Grid item md={12} lg={4}>
+                <Grid item md={12} lg={3}>
                     <FooterTypography variant={'h6'} >Website by Philip Bohm @{currentYear}</FooterTypography>
                 </Grid>
-                <Grid item  md={8} lg={4}>
+                <Grid item  md={10} lg={6}>
                     
                         <FooterTypography>Cantina Latina dosen't really need a web page. As much as we would like to have an online store, our empanadas are enjoyed best freshly made and eaten on the spot.</FooterTypography>
                         <FooterTypography>Yes we do the socials like everybody else. <Link sx={{color: theme.palette.headfoot.headFooterLinkColor, textDecoration: 'underline'}} href="contact">Contact us</Link> via email so that we both dont miss your message or read our latest posts on Facebook and Instagram.</FooterTypography>
                         <FooterTypography>This page is a demonstration of a hand coded site using <Link to="Next.js" sx={{color: '#E38D2B', textDecoration: 'underline'}}>Next.js</Link> and Material design just for Philip's benefit.</FooterTypography>
                     
                 </Grid>
-                <Grid item md={false} lg={4}>
+                <Grid item  md={12}  lg={3}>
                 </Grid>
             </Grid>
             

@@ -21,7 +21,7 @@ export default function Contact({ children }) {
                 padding: '60px 90px',
                 borderRadius: '4px'
                 }} >
-                        <Typography variant="h3" style={{color : "#FFFFFF", margin: '0px'}} >
+                        <Typography variant="h3" md={12}  lg={3}  style={{color : "#FFFFFF", margin: '0px'}} >
                                 Any enquiries please give us an email. </Typography>
                         <Grid2 container
                             spacing={6}
