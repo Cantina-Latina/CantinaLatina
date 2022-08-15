@@ -13,8 +13,8 @@ export const ParallaxPageBox = ({ id, children, bgColor, className }) => {
                     backgroundColor: bgColor,
                     justifyContent: 'center',
                     textAlign: 'inherit',
-                    padding: '200px 80px 45px',
-                    paddingTop: "160px"
+                    padding: {lg:'200px 80px 45px',xs: '100px 20px '},
+                    paddingTop: {lg:'160px',xs: '120px'},
                 }}
             >
 
@@ -23,7 +23,6 @@ export const ParallaxPageBox = ({ id, children, bgColor, className }) => {
                     backgroundColor: bgColor,
                     justifyContent: 'center',
                     maxWidth: "800px",
-                    //minWidth: "420px",
                     margin: '0 auto'
                 }}>
 
