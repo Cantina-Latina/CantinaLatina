@@ -49,17 +49,17 @@ export default function MyApp(props) {
             //color: "#272100"
           },
           h2: {
-            fontFamily: "'Mouse Memoirs', cursive",
+            fontFamily: "'Mouse Memoirs'",
             fontWeight: 'lighter'
           },
           h3: {
-            fontFamily: "'Mouse Memoirs', cursive",
+            fontFamily: "'Mouse Memoirs'",
             fontWeight: 'lighter',
             paddingTop: '20px',
             marginBottom: '0 !important'
           },
           h4: {
-            fontFamily: "'Mouse Memoirs', cursive",
+            fontFamily: "'Mouse Memoirs'",
             fontWeight: 'lighter'
           },
           h5: {
