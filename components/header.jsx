@@ -52,7 +52,6 @@ const HeaderStyled = styled.header`
   justify-content: center;
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
-  //height: 75%;
   position: relative;
 
   &::before {
@@ -74,8 +73,11 @@ const BusinessTitle = styled.h1`
     font-family: 'Titan One', cursive;
     margin: 0;
     font-size: ${(props) => props.fontSize};
-    ${media.lg} {
+    ${media.xl} {
       font-size: 4em;
+    }
+    ${media.lg} {
+      font-size: 3em;
     }
     ${media.md} {
       font-size: 2.5em;
@@ -100,7 +102,7 @@ const Header = (props) => {
   const picaroCss = (props.picaroCss) ? props.picaroCss : '';
   const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
   
-  const backgroundPadding = (stackDirection != 'column') ? '70px 35px 45px 80px' : '60px 25px 50px 25px';
+  const backgroundPadding = (stackDirection != 'column') ? '70px 35px 45px 20px' : '60px 25px 50px 25px';
 
 
   return (
@@ -133,7 +135,7 @@ const Header = (props) => {
               </picture>
             </Box>
             <Box>
-              <BusinessTitle fontSize={(stackDirection == 'column') ? '5em' : '4em'}>
+              <BusinessTitle fontSize={(stackDirection == 'column') ? '5em' : '5em'}>
                 Cantina Latina
               </BusinessTitle>
               <SubHeading>Empanada Specialists - Salamanca Market Hobart Tasmania</SubHeading>
