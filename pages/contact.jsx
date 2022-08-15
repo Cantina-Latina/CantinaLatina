@@ -22,7 +22,7 @@ export default function Contact({ children }) {
                 borderRadius: '4px'
                 }} >
                         <Typography variant="h3" md={12}  lg={3}  style={{color : "#FFFFFF", margin: '0px'}} >
-                                Any enquiries please give us an email. </Typography>
+                                Any enquiries please send us an email. </Typography>
                         <Grid2 container
                             spacing={6}
                             direction="row"
@@ -34,8 +34,8 @@ export default function Contact({ children }) {
                                 <SocialsList textcolor="white" />
                             </Grid2>
 
-                            <Grid2 md={8} lg={4}>
-                                <Typography variant="h5" style={{color : "#D69C1E"}} >Follow us on Facebook and Instagram.
+                            <Grid2 md={8} lg={8}>
+                                <Typography variant="h4" style={{color : "#D69C1E"}} >Follow us on Facebook and Instagram.
                                 </Typography>
                             </Grid2>
 
