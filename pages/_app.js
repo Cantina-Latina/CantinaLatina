@@ -5,7 +5,7 @@ import '../styles/blob.scss';
 import React from 'react';
 //import PropTypes from 'prop-types';
 import Head from 'next/head';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from '../components/layout'
 import '@fontsource/titan-one/400.css';
@@ -21,14 +21,11 @@ export default function MyApp(props) {
   const headFooterFontColor = '#dbb56d';
   const headFooterLinkColor = '#E38D2B';
 
-  const theme = createTheme({
+  let theme = createTheme({
     typography: {
       fontFamily: 'quicksand'
     },
     palette: {
-      // buttons: {
-      //   main: headFooterFontColor,
-      // },
       headfoot: {
         main: headFooterFontColor,
         headFooterColor: headFooterColor,
@@ -41,7 +38,6 @@ export default function MyApp(props) {
         styleOverrides: {
           colorPrimary: {
             backgroundColor: headFooterColor,
-            //color: headFooterFontColor
           }
         }
       },
@@ -88,10 +84,11 @@ export default function MyApp(props) {
           },
         ]
       },
-      
     }
-    
   });
+
+
+  theme = responsiveFontSizes(theme);
 
   useEffect(() => {
     // Remove the server-side injected CSS.
