@@ -49,7 +49,6 @@ const HeaderStyled = styled.header`
 
   color: ${colours.primary};
   display: flex; 
-  justify-content: center;
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
   position: relative;
@@ -75,6 +74,9 @@ const BusinessTitle = styled.h1`
     font-size: ${(props) => props.fontSize};
     ${media.xl} {
       font-size: 4em;
+    }
+    ${media.lg} {
+      font-size: 3em;
     }
     ${media.lg} {
       font-size: 3em;
