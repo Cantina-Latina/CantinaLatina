@@ -25,7 +25,7 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                 
             </Grid> */}
             <Grid item xs={6} md={4} >
-                <Image 
+                <Image className={'sneakyTransforms'}
                     aspectRatio={1.6}
                     src={pictureSrc}
                 />
@@ -35,7 +35,9 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
                     {label}
                 </Typography>
                 <Typography  >
-                    <i><FormatQuoteIcon fontSize="small" />{speil}<FormatQuoteIcon color='#333333' fontSize="small" /></i></Typography>
+                {speil}
+                    {/* <><FormatQuoteIcon fontSize="small" />{speil}<FormatQuoteIcon  fontSize="small" /></> */}
+                    </Typography>
             </Grid>
         </>
 
