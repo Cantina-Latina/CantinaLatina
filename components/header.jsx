@@ -49,6 +49,7 @@ const HeaderStyled = styled.header`
 
   color: ${colours.primary};
   display: flex; 
+  justify-content: center;
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
   position: relative;
