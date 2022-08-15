@@ -49,7 +49,6 @@ const HeaderStyled = styled.header`
 
   color: ${colours.primary};
   display: flex; 
-  justify-content: center;
   text-align: ${(props) => props.textAlign};
   padding: ${(props) => props.backgroundPadding};
   //height: 75%;
@@ -100,7 +99,7 @@ const Header = (props) => {
   const picaroCss = (props.picaroCss) ? props.picaroCss : '';
   const stackDirection = (props.stackDirection) ? props.stackDirection : 'column';
   
-  const backgroundPadding = (stackDirection != 'column') ? '70px 235px 45px 80px' : '60px 25px 50px 25px';
+  const backgroundPadding = (stackDirection != 'column') ? '70px 35px 45px 80px' : '60px 25px 50px 25px';
 
 
   return (
