@@ -21,26 +21,19 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
 
     return (
         <>
-            {/* <Grid item xs={12} md={12}>
-                
-            </Grid> */}
-            <Grid item xs={6} md={4} >
+            <Grid item xs={12} sm={4}>
                 <Image className={'sneakyTransforms'}
                     aspectRatio={1.6}
                     src={pictureSrc}
                 />
             </Grid>
-            <Grid item xs={6} md={8}>
+            <Grid item xs={12} sm={8}>
                 <Typography variant="h5" id={id} >
                     {label}
                 </Typography>
-                <Typography  >
-                {speil}
-                    {/* <><FormatQuoteIcon fontSize="small" />{speil}<FormatQuoteIcon  fontSize="small" /></> */}
-                    </Typography>
+                <Typography>{speil}</Typography>
             </Grid>
         </>
-
     )
 }
 
@@ -48,16 +41,15 @@ export const OurMenu = () => {
     return (
         
             <Box id="ourMenu" sx={{ 
-                //position: 'relative', 
                 backgroundColor: '#FFFFFF', 
                 padding: '40px',
                 borderRadius: '4px'
                 }} >
-                <Typography variant="h3">
+                <Typography variant="h2">
                     Our regular Saturday menu:
                 </Typography>
                 <Box sx={{ height: 20 }} ></Box>
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                     <GridItems
                         id="pino-menu"
                         pictureSrc={pino.src}

@@ -23,7 +23,7 @@ export const ParallaxPageBox = ({ id, children, bgColor, className }) => {
                     backgroundColor: bgColor,
                     justifyContent: 'center',
                     maxWidth: "800px",
-                    minWidth: "420px",
+                    //minWidth: "420px",
                     margin: '0 auto'
                 }}>
 

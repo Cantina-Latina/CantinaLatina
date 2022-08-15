@@ -53,11 +53,10 @@ export default function MenuDrawer() {
             <Drawer
                 sx={{
                     width: drawerWidth,
-                    //backgroundColor: '#fEcc33',
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
                         width: drawerWidth,
-                        backgroundColor: '#FAC146', // todo create color like buttons
+                        backgroundColor: '#FAC146', 
                         transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
                         boxShadow: '0px 0px 10px -2px rgba(0,0,0,0.75)',
                     },
