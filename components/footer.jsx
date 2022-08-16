@@ -21,7 +21,7 @@ const Footer = (props) => {
         <Box id="footer"
             sx={{
                 padding: "60px 40px",
-                boxShadow: 'inset 0px 2px 4px 1px rgb(0 0 0 / 20%),inset 0px 4px 5px 0px rgb(0 0 0 / 14%)',
+                //boxShadow: 'inset 0px 2px 4px 1px rgb(0 0 0 / 20%),inset 0px 4px 5px 0px rgb(0 0 0 / 14%)',
                 backgroundColor: theme.palette.headfoot.headFooterColor,
                 //color: "headfoot"
             }}>
