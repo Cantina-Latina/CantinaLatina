@@ -114,12 +114,9 @@ const Header = (props) => {
         <MenuDrawer />
       </AppBar>
       <HeaderStyled
-        //style={{paddingRight: '200px'}}
         backgroundPos={backgroundPos}
         backgroundPadding={backgroundPadding}
-        //textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
       >
-
 
         <Parallax speed={-3} >
           <Stack
