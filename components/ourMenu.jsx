@@ -48,6 +48,11 @@ export const OurMenu = () => {
                 <Typography variant="h2">
                     Our regular Saturday menu:
                 </Typography>
+                <Typography variant="h6">
+                    In addition to the regulars, we occasionally add specials at Salamanca such as Pollo (chicken), and also Manzana (sweet) empanadas with cream. </Typography>
+                    <Typography variant="h6">... or would you like seafood empanadas for your event? Just ask us.</Typography>
+                
+
                 <Box sx={{ height: 20 }} ></Box>
                 <Grid container spacing={4}>
                     <GridItems

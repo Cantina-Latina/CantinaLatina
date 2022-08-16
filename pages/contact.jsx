@@ -16,10 +16,21 @@ export default function Contact({ children }) {
             <main>
 
 
-                <ParallaxPageBox id="contact" bgColor={"#595959"} >
+                <ParallaxPageBox 
+                    id="contact" 
+                    bgColor={"#494435"} 
+                    containerStyle={{
+                        //backgroundImage: 'url("/images/pinch.svg")',
+
+                        padding: {lg:'20px 20px 45px', xs: '100px 20px '},
+                        paddingTop: {lg:'40px',xs: '0'},
+                        backgroundAttachment: 'fixed',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }}>
                     <Box sx={{
-                        padding: { lg: '60px 90px', xs: '20px 90px' },
-                        borderRadius: '4px'
+                        padding: { lg: '60px 90px', xs: '20px 50px' },
+                        borderRadius: '4px',
                     }} >
                         <Typography variant="h3" md={12} lg={3} style={{ color: "#FFFFFF", margin: '0px' }} >
                             Any enquiries please send us an email. </Typography>
