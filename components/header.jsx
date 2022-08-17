@@ -24,7 +24,8 @@ export const sizes = {
 
 export const colours = {
   background: "#fff",
-  primary: "#4f2601",
+  primary: "#4e3300",  
+  //primary: "#4f2601",
   secondary: "#c78e16",
   third: "#de841c",
   complimentary: "#3f2d07"

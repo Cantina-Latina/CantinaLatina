@@ -12,7 +12,7 @@ import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
 import { SocialsList } from './socialsList'
 
-import logo from "../images/Cantina-banner.jpg";
+import logo from "../images/Cantina-banner-WebSite.png";
 
 const drawerWidth = 240;
 
@@ -54,8 +54,8 @@ export default function MenuDrawer() {
                     sx={{
                         marginTop: '7px',
                         marginLeft: '10px',
-                        height: '33px',
-                        width: '155px'
+                        height: '29px',
+                        width: '200px'
                      }} />
             </Grid>
             <Grid item id="menuDrawer" >
