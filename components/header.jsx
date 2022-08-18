@@ -24,7 +24,8 @@ export const sizes = {
 
 export const colours = {
   background: "#fff",
-  primary: "#4f2601",
+  primary: "#4e3300",  
+  //primary: "#4f2601",
   secondary: "#c78e16",
   third: "#de841c",
   complimentary: "#3f2d07"
@@ -114,12 +115,9 @@ const Header = (props) => {
         <MenuDrawer />
       </AppBar>
       <HeaderStyled
-        //style={{paddingRight: '200px'}}
         backgroundPos={backgroundPos}
         backgroundPadding={backgroundPadding}
-        //textAlign={(stackDirection == 'column') ? 'center' : 'inherit'}
       >
-
 
         <Parallax speed={-3} >
           <Stack

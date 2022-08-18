@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import { Grid } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
@@ -10,6 +11,8 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
 import { SocialsList } from './socialsList'
+
+import logo from "../images/Cantina-banner-WebSite.png";
 
 const drawerWidth = 240;
 
@@ -36,7 +39,26 @@ export default function MenuDrawer() {
     
     return (
         <>
-            <Box id="menuDrawer" sx={{  marginLeft: 'auto', textAlign: 'center', padding: '16px' }}>
+            <Grid 
+                container
+                spacing={3}
+                justifyContent="space-between"
+                alignItems="center"
+                sx={{  padding: '12px' }}
+            >
+                
+            <Grid item>
+                <Box 
+                    component={'img'} 
+                    src={logo.src}
+                    sx={{
+                        marginTop: '7px',
+                        marginLeft: '10px',
+                        height: '29px',
+                        width: '200px'
+                     }} />
+            </Grid>
+            <Grid item id="menuDrawer" >
 
                 <MenuPageLinksHorizontal />
                 <IconButton
@@ -49,7 +71,9 @@ export default function MenuDrawer() {
                 >
                     <MenuIcon />
                 </IconButton>
-            </Box>
+            </Grid>
+
+            </Grid>
             <Drawer
                 sx={{
                     width: drawerWidth,
