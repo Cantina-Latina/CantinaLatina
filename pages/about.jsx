@@ -108,7 +108,7 @@ export default function About({ children }) {
                 <ParallaxPageBox
                     className={"warpedDiv"}
                     containerStyle={{ boxShadow: ' 0px 2px 4px 1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 14%)'}}
-                    bgColor={"#195dab"}
+                    bgColor={"#1B86B3"}
                     id="googleMapsLocator"
                 >
 
@@ -130,7 +130,12 @@ export default function About({ children }) {
             </ParallaxPageBox>
 
             <ParallaxPageBox bgColor={"#4f5058"}>
-                <Typography variant="h3" color="white">
+                <Typography 
+                    variant="h3" 
+                    color="white"
+                    sx={{
+                    paddingTop: '140px',}}
+                    >
                     Photos from the <ReactRotatingText
                         cursor={true}
                         items={['vault', 'beginnings', 'historicos']}
@@ -140,6 +145,9 @@ export default function About({ children }) {
                         deletingInterval={75}
                     />
                 </Typography>
+                <Typography 
+                    variant="h6" 
+                    color="white">See whats new on Facebook/Instagram</Typography>
                 <ImageMozaic />
             </ParallaxPageBox>
 

@@ -34,7 +34,8 @@ const Footer = (props) => {
             >
 
                 <Grid item md={12} lg={3}>
-                    <FooterTypography variant={'h6'} >Website by Philip Bohm @{currentYear}</FooterTypography>
+                    <FooterTypography variant={'cute'} >Website by Philip Bohm @{currentYear}</FooterTypography>
+                    <FooterTypography variant={'cute'} >https://github.com/Cantina-Latina/site</FooterTypography>
                 </Grid>
                 <Grid item  md={10} lg={6}>
                     
