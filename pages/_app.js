@@ -17,7 +17,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
-  const headFooterColor = '#403103';
+  const headFooterColor = '#353125';
   const headFooterFontColor = '#CC9C0A';
   const headFooterLinkColor = '#E38D2B';
 

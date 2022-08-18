@@ -24,7 +24,7 @@ export const sizes = {
 
 export const colours = {
   background: "#fff",
-  primary: "#4e3300",  
+  primary: "#4c360b",  
   //primary: "#4f2601",
   secondary: "#c78e16",
   third: "#de841c",
@@ -73,6 +73,8 @@ const HeaderStyled = styled.header`
 const BusinessTitle = styled.h1`
     font-family: 'Titan One', cursive;
     margin: 0;
+    //text-shadow: 10px 10px 15px -14px rgba(66,49,5,0.96);
+    text-shadow: 3px 2px 3px rgb(255 255 255 / 100%);
     font-size: ${(props) => props.fontSize};
     ${media.xl} {
       font-size: 4em;
