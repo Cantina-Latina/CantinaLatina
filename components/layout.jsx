@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 export default function Layout({ children }) {
 
     
-    let isHomePage = (children.type.name == "HomePage");
+    let isHomePage = (children.type.name == "DemoPage");
 
     const renderHeader = () => {
       if (isHomePage) {

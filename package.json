@@ -2,7 +2,7 @@
   "name": "cantina-latina-website",
   "version": "1.0.1",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://Cantina-Latina.github.io/CantinaLatina",
+  "homepage": "https://Cantina-Latina.github.io/site",
   "private": true,
   "scripts": {
     "dev": "next dev",

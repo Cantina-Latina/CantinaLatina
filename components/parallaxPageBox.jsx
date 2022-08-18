@@ -11,8 +11,7 @@ export const ParallaxPageBox = ( props ) => {
         backgroundColor: bgColor,
         justifyContent: 'center',
         textAlign: 'inherit',
-        padding: {lg:'200px 80px 45px',xs: '100px 20px '},
-        paddingTop: {lg:'160px',xs: '120px'},
+        padding: {lg:'90px 80px 70px 80px',xs: '70px 20px '},
         ...containerStyle,
     }
 
