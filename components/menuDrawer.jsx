@@ -67,7 +67,9 @@ export default function MenuDrawer() {
                     edge="end"
                     size="large"
                     onClick={handleDrawerOpen}
-                    sx={{ ...(open && { display: 'true' }), float: 'right', padding: '3px 60px' }}
+                    sx={{ ...(open && { display: 'true' }), 
+                    float: 'right', 
+                    padding: { md: '3px 10px', lg: '3px 60px' }}}
                 >
                     <MenuIcon />
                 </IconButton>

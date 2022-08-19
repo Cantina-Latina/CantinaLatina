@@ -107,7 +107,10 @@ export default function About({ children }) {
 
                 <ParallaxPageBox
                     className={"warpedDiv"}
-                    containerStyle={{ boxShadow: ' 0px 2px 4px 1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 14%)'}}
+                    containerStyle={{ 
+                        boxShadow: ' 0px 2px 4px 1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 14%)',
+                        marginRight: { md: '17px', lg: '25px' }
+                    }}
                     bgColor={"#1B86B3"}
                     id="googleMapsLocator"
                 >
