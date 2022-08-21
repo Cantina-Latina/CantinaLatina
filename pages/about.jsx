@@ -106,10 +106,10 @@ export default function About({ children }) {
                 </ParallaxPageBox>
 
                 <ParallaxPageBox
-                    className={"warpedDiv"}
+                    //className={"warpedDiv"}
                     containerStyle={{ 
                         boxShadow: ' 0px 2px 4px 1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 14%)',
-                        marginRight: { md: '17px', lg: '25px' }
+                        //marginRight: { md: '17px', lg: '25px' }
                     }}
                     bgColor={"#1B86B3"}
                     id="googleMapsLocator"
@@ -137,7 +137,8 @@ export default function About({ children }) {
                     variant="h3" 
                     color="white"
                     sx={{
-                    paddingTop: '140px',}}
+                    //paddingTop: '140px',
+                }}
                     >
                     Photos from the <ReactRotatingText
                         cursor={true}
