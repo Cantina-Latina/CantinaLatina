@@ -35,13 +35,18 @@ const Footer = (props) => {
 
                 <Grid item md={12} lg={3}>
                     <FooterTypography variant={'cute'} >Website by Philip Bohm @{currentYear}</FooterTypography>
-                    <FooterTypography variant={'cute'} >https://github.com/Cantina-Latina/site</FooterTypography>
+                    <FooterTypography variant={'cute'} >
+                        <Link 
+                            href="https://github.com/Cantina-Latina/site"
+                            sx={{color: theme.palette.headfoot.headFooterLinkColor, textDecoration: 'underline'}}>https://github.com/Cantina-Latina/site
+                        </Link>
+                    </FooterTypography>
                 </Grid>
                 <Grid item  md={10} lg={6}>
                     
                         <FooterTypography>Cantina Latina dosen't really need a web page. As much as we would like to have an online store, our empanadas are enjoyed best freshly made and eaten on the spot.</FooterTypography>
                         <FooterTypography>Yes we do the socials like everybody else. <Link sx={{color: theme.palette.headfoot.headFooterLinkColor, textDecoration: 'underline'}} href="contact">Contact us</Link> via email so that we both dont miss your message or read our latest posts on Facebook and Instagram.</FooterTypography>
-                        <FooterTypography>This page is a demonstration of a hand coded site using <Link to="Next.js" sx={{color: '#E38D2B', textDecoration: 'underline'}}>Next.js</Link> and Material design just for Philip's benefit.</FooterTypography>
+                        <FooterTypography>This page is a demonstration of a hand coded site using Next.js and Material design just for Philip's benefit.</FooterTypography>
                     
                 </Grid>
                 <Grid item  md={12}  lg={3}>
