@@ -22,7 +22,7 @@ const GridItems = ({ pictureSrc, label, speil, id }) => {
     return (
         <>
             <Grid item xs={12} sm={4}>
-                <Image className={'sneakyTransforms'}
+                <Image 
                     aspectRatio={1.6}
                     src={pictureSrc}
                 />
