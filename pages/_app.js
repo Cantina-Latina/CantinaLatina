@@ -18,11 +18,11 @@ export default function MyApp(props) {
 
   const headFooterColor = '#353125';
   const headFooterFontColor = '#CC9C0A';
-  const headFooterLinkColor = '#E38D2B';
+  const headFooterLinkColor = '#CC9C0A';
 
   let theme = createTheme({
     typography: {
-      fontFamily: 'quicksand'
+      //fontFamily: 'quicksand'
     },
     palette: {
       headfoot: {

@@ -132,7 +132,7 @@ export default function About({ children }) {
                 </Box>
             </ParallaxPageBox>
 
-            <ParallaxPageBox bgColor={"#4f5058"}>
+            <ParallaxPageBox bgColor={"#9a9a9a"}>
                 <Typography 
                     variant="h3" 
                     color="white"
