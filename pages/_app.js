@@ -3,7 +3,6 @@ import '../styles/globals.scss';
 import '../styles/blob.scss';
 
 import React from 'react';
-//import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -17,8 +16,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
-  const headFooterColor = '#191705';
-  const headFooterFontColor = '#dbb56d';
+  const headFooterColor = '#353125';
+  const headFooterFontColor = '#CC9C0A';
   const headFooterLinkColor = '#E38D2B';
 
   let theme = createTheme({
@@ -72,6 +71,11 @@ export default function MyApp(props) {
             fontFamily: '"Source Sans Pro", sans-serif',
             fontSize: 'normal',
             fontWeight: 'bolder'
+          },
+          cute: {
+            fontFamily: '"helvetica", sans-serif',
+            fontSize: 'normal',
+            fontWeight: 'bolder'
           }
         },
         variants: [
@@ -118,8 +122,3 @@ export default function MyApp(props) {
     </React.Fragment>
   );
 }
-
-// MyApp.propTypes = {
-//   Component: PropTypes.elementType.isRequired,
-//   pageProps: PropTypes.object.isRequired,
-// };

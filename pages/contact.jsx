@@ -12,16 +12,11 @@ export default function Contact({ children }) {
 
         <>
 
-
             <main>
-
-
                 <ParallaxPageBox 
                     id="contact" 
                     bgColor={"#494435"} 
                     containerStyle={{
-                        //backgroundImage: 'url("/images/pinch.svg")',
-
                         padding: {lg:'20px 20px 45px', xs: '100px 20px '},
                         paddingTop: {lg:'40px',xs: '0'},
                         backgroundAttachment: 'fixed',
@@ -49,17 +44,10 @@ export default function Contact({ children }) {
                                 <Typography variant="h4" style={{ color: "#D69C1E" }} >Follow us on Facebook and Instagram.
                                 </Typography>
                             </Grid2>
-
-
                         </Grid2>
-
                     </Box>
                 </ParallaxPageBox>
             </main>
-
-
-
-
 
         </>
 

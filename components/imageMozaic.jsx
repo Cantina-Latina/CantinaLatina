@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem} from "@mui/material"
+import { ImageList, ImageListItem, ImageListItemBar} from "@mui/material"
 import img1 from "/images/cantinaImages/P1300076.jpg"
 import img2 from "/images/cantinaImages/P3040237.jpg"
 import img3 from "/images/cantinaImages/P6180006.jpg"
@@ -47,9 +47,11 @@ const itemData = [
 export default function ImageMozaic( ) {
 
     return (
-        <ImageList variant="masonary" sx={{ }} cols={4} rowHeight={164}>
+        <ImageList variant="masonary" cols={2} gap={18} >
             {itemData.map((item) => (
-                <ImageListItem key={item.img}>
+                <ImageListItem 
+                    key={item.img} 
+                    sx={{border: '20px solid white', borderRadius:'4px'}}>
                     <img
                         src={`${item.img}?w=164&fit=crop&auto=format`}
                         srcSet={`${item.img}?w=164&fit=crop&auto=format&dpr=2 2x`}
@@ -57,6 +59,7 @@ export default function ImageMozaic( ) {
                         title={item.title}
                         loading="lazy"
                     />
+                    <ImageListItemBar  title={item.title} />
                 </ImageListItem>
             ))}
         </ImageList>

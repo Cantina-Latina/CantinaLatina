@@ -3,5 +3,5 @@ export const MenuPageLinks = [
     ['Contact', '/contact'],
     ['Salamanca Market', '/#googleMapsLocator'],
     ['Our Empanadas', '/#ourMenu'],
-    ['Pebre - Chili Salsa', '/#pebre-menu'],
+    ['Salsa Pebre', '/#pebre-menu'],
 ];

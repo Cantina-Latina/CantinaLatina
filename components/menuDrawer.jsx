@@ -10,7 +10,8 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { MenuPageLinksList } from './menuPageLinksList';
 import { MenuPageLinksHorizontal } from './menuPageLinksHorizontal';
-import { SocialsList } from './socialsList'
+import { SocialsList } from './socialsList';
+import { Link } from '@mui/material';
 
 import logo from "../images/Cantina-banner-WebSite.png";
 
@@ -36,42 +37,48 @@ export default function MenuDrawer() {
     const handleDrawerClose = () => {
         setOpen(false);
     };
-    
+
     return (
         <>
-            <Grid 
+            <Grid
                 container
                 spacing={3}
                 justifyContent="space-between"
                 alignItems="center"
-                sx={{  padding: '12px' }}
+                sx={{ padding: '12px' }}
             >
-                
-            <Grid item>
-                <Box 
-                    component={'img'} 
-                    src={logo.src}
-                    sx={{
-                        marginTop: '7px',
-                        marginLeft: '10px',
-                        height: '29px',
-                        width: '200px'
-                     }} />
-            </Grid>
-            <Grid item id="menuDrawer" >
 
-                <MenuPageLinksHorizontal />
-                <IconButton
-                    color="headfoot"
-                    aria-label="open drawer"
-                    edge="end"
-                    size="large"
-                    onClick={handleDrawerOpen}
-                    sx={{ ...(open && { display: 'true' }), float: 'right', padding: '3px 60px' }}
-                >
-                    <MenuIcon />
-                </IconButton>
-            </Grid>
+                <Grid item>
+                    <Link href="/" >
+                        <Box
+                            component={'img'}
+                            src={logo.src}
+                            sx={{
+                                marginTop: '7px',
+                                marginLeft: '10px',
+                                height: '29px',
+                                width: '200px'
+                            }} />
+                    </Link>
+                </Grid>
+                <Grid item id="menuDrawer" >
+
+                    <MenuPageLinksHorizontal />
+                    <IconButton
+                        color="headfoot"
+                        aria-label="open drawer"
+                        edge="end"
+                        size="large"
+                        onClick={handleDrawerOpen}
+                        sx={{
+                            ...(open && { display: 'true' }),
+                            float: 'right',
+                            padding: { md: '3px 10px', lg: '3px 60px' }
+                        }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                </Grid>
 
             </Grid>
             <Drawer
@@ -80,7 +87,7 @@ export default function MenuDrawer() {
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
                         width: drawerWidth,
-                        backgroundColor: '#FAC146', 
+                        backgroundColor: '#FAC146',
                         transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
                         boxShadow: '0px 0px 10px -2px rgba(0,0,0,0.75)',
                     },
@@ -97,7 +104,7 @@ export default function MenuDrawer() {
                 <MenuPageLinksList />
                 <Divider />
 
-                <SocialsList textcolor="inherit"/>
+                <SocialsList textcolor="inherit" />
 
             </Drawer>
 
