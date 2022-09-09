@@ -41,10 +41,8 @@ const Footer = (props) => {
                         <FooterTypography>Website by Philip Bohm @{currentYear}. Created as a demo hand coded site using Next.js and Material design just for Philip's benefit. Hosted on Github because its free.</FooterTypography>
 
                         <FooterTypography ></FooterTypography>
-                    <FooterTypography >
                     <FooterTypography variant={'h6'} >Website by Philip Bohm @{currentYear}</FooterTypography>
                     <FooterTypography variant={'cute'} >
-
                         <Link 
                             href="https://github.com/Cantina-Latina/site"
                             sx={{color: theme.palette.headfoot.headFooterLinkColor, textDecoration: 'underline'}}>https://github.com/Cantina-Latina/site
