@@ -33,7 +33,6 @@ const Footer = (props) => {
             >
 
                 <Grid item md={12} lg={3}>
-
                 </Grid>
                 <Grid item  md={10} lg={6}>
                     
@@ -43,11 +42,14 @@ const Footer = (props) => {
 
                         <FooterTypography ></FooterTypography>
                     <FooterTypography >
+                    <FooterTypography variant={'h6'} >Website by Philip Bohm @{currentYear}</FooterTypography>
+                    <FooterTypography variant={'cute'} >
+
                         <Link 
                             href="https://github.com/Cantina-Latina/site"
                             sx={{color: theme.palette.headfoot.headFooterLinkColor, textDecoration: 'underline'}}>https://github.com/Cantina-Latina/site
                         </Link>
-                    </FooterTypography>
+                    </FooterTypography>      
                     
                 </Grid>
                 <Grid item  md={12}  lg={3}>
