@@ -9,20 +9,20 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from '../components/layout'
 import '@fontsource/titan-one/400.css';
 import '@fontsource/mouse-memoirs/400.css';
-import '@fontsource/quicksand';
-import "@fontsource/source-sans-pro";
+//import '@fontsource/quicksand';
+//import "@fontsource/source-sans-pro";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
 
   const headFooterColor = '#353125';
-  const headFooterFontColor = '#CC9C0A';
-  const headFooterLinkColor = '#CC9C0A';
+  const headFooterFontColor = '#CCCCCC';
+  const headFooterLinkColor = '#CCCCCC';
 
   let theme = createTheme({
     typography: {
-      //fontFamily: 'quicksand'
+      fontFamily: 'gibson'
     },
     palette: {
       headfoot: {
@@ -62,18 +62,18 @@ export default function MyApp(props) {
             fontWeight: 'lighter'
           },
           h5: {
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontWeight: 'bolder',
+            //fontFamily: '"Source Sans Pro", sans-serif',
+            //fontWeight: 'bolder',
             fontSize: 'large',
             marginBottom: '0 !important' 
           },
           h6: {
-            fontFamily: '"Source Sans Pro", sans-serif',
+            //fontFamily: '"Source Sans Pro", sans-serif',
             fontSize: 'normal',
-            fontWeight: 'bolder'
+            //fontWeight: 'bolder'
           },
           cute: {
-            fontFamily: '"helvetica", sans-serif',
+            //fontFamily: '"helvetica", sans-serif',
             fontSize: 'normal',
             fontWeight: 'bolder'
           }

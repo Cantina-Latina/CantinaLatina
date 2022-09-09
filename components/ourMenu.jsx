@@ -11,10 +11,10 @@ import Image from 'material-ui-image';
 
 const speil = {
     pino: "Tasmanian pulled beef, golden onions, raisins, herbs, kalamata olive and a slice of egg",
-    vege: "Caramelized leeks and onions, sauteed mushrooms, silverbeet and Tasmanian Cheddar",
+    vege: "Caramelised leeks and onions, sautéed mushrooms, silverbeet and Tasmanian Cheddar",
     queso: "Wikid choice of Ashgrove Smoked Cheddar, Tasmanian Cheddar and mozzarella cheese",
     pebre: "Included with every Empanada, on the side of course! We also sell it by the jar.",
-    vegan: "Caramelized leeks and onions, sautéed mushrooms, fresh silverbeet, with pumpkin and extra sliced kalamata olives"
+    vegan: "Caramelised leeks and onions, sautéed mushrooms, fresh silverbeet, with pumpkin and extra sliced kalamata olives"
 }
 
 const GridItems = ({ pictureSrc, label, speil, id }) => {
